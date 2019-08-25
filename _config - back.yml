@@ -98,7 +98,7 @@ jsonContent:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://name:password@github.com/kcqnly/kcqnly.github.io.git
+  repo: https://yourname:password@github.com/kcqnly/kcqnly.github.io.git
   branch: master
 
 
