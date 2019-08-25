@@ -1,5 +1,6 @@
 ---
-title: JAVA UDP编程
+title: JAVA UDP编程 
+thumbnail: /gallery/wuhan.jpg
 date: 2019-08-24 19:24:01
 tags: java
 categories:

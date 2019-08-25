@@ -1,5 +1,6 @@
 ---
 title: Git学习笔记 
+thumbnail: /gallery/square.jpg
 date: 2019-07-06 10:15:47
 tags: git 
 ---
