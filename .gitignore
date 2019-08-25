@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+public/
+.deploy*/
+*id_rsa_kcqn
+*.pub
+node_modules/
+*_config.yml
