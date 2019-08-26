@@ -25,7 +25,9 @@
                             <%- body %>
                         </div>
                         <%- partial('common/widget', { position: 'left' }) %>
-                            <%- partial('common/widget', { position: 'right' }) %>
+                            <% if (page.__page !== true && page.__post !== true) { %>
+                                <%- partial('common/widget', { position: 'right' }) %>
+                                    <% } %>
                     </div>
                 </div>
             </section>
