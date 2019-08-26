@@ -20,7 +20,7 @@
 <meta property="og:description" content="TCP：Transmission Control Protocol  传输控制协议，面向连接的协议 两台机器之间可靠的，无差错的数据传输 双向字节流传递   服务器（软件服务器：能实现一定功能，在公开地址上对外服务）创建一个ServerSocket，等待连接 客户机：创建一个Socket，连接到服务器 服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/gallery/flyingfish.jpg">
-<meta property="og:updated_time" content="2019-08-25T15:50:53.267Z">
+<meta property="og:updated_time" content="2019-08-26T12:05:47.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JAVA TCP编程">
 <meta name="twitter:description" content="TCP：Transmission Control Protocol  传输控制协议，面向连接的协议 两台机器之间可靠的，无差错的数据传输 双向字节流传递   服务器（软件服务器：能实现一定功能，在公开地址上对外服务）创建一个ServerSocket，等待连接 客户机：创建一个Socket，连接到服务器 服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接">
@@ -89,7 +89,7 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body class="is-3-column">
+<body class="is-2-column">
     <nav class="navbar navbar-main">
     <div class="container">
         <div class="navbar-brand is-flex-center">
@@ -132,6 +132,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -145,7 +149,7 @@
             <section class="section">
                 <div class="container">
                     <div class="columns">
-                        <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                        <div class="column is-8-tablet is-9-desktop is-9-widescreen has-order-2 column-main">
                             <div class="card">
     
     <div class="card-image">
@@ -241,6 +245,13 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08/26/my-bike/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">丢车</span>
+            </a>
+        </div>
+        
         
         <div class="level-end">
             <a class="level level-item has-link-grey  article-nav-next" href="/2019/08/24/JAVA-UDP/">
@@ -260,7 +271,7 @@
         
             
                 
-                    <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+                    <div class="column-right-shadow  ">
                         
                             
 <div class="card widget">
@@ -278,7 +289,7 @@
                     
                     
                     <p class="is-size-6 is-block">
-                        Kcqnly&#39;s blog
+                        爱国 敬业 诚信 友善
                     </p>
                     
                     
@@ -297,7 +308,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        7
                     </p>
                 </div>
             </div>
@@ -317,7 +328,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        4
                     </p>
                 </div>
             </div>
@@ -371,6 +382,33 @@
 </div>
                                 
                             
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                目录
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#相关类">
+        <span class="has-mr-6">1</span>
+        <span>相关类</span>
+        </a></li><li>
+        <a class="is-flex" href="#注意事项">
+        <span class="has-mr-6">2</span>
+        <span>注意事项</span>
+        </a></li><li>
+        <a class="is-flex" href="#代码演示">
+        <span class="has-mr-6">3</span>
+        <span>代码演示</span>
+        </a></li><li>
+        <a class="is-flex" href="#感谢阅读">
+        <span class="has-mr-6">4</span>
+        <span>感谢阅读</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
                                 
                             
 
@@ -439,7 +477,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/MySongs/" style="font-size: 10px;">MySongs</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+        <a href="/tags/MySongs/" style="font-size: 10px;">MySongs</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a>
     </div>
 </div>
 
@@ -456,6 +494,25 @@
         
         <article class="media">
             
+            <a href="/2019/08/26/my-bike/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/mybike.jpg" alt="丢车">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-26T10:57:23.000Z">2019-08-26</time></div>
+                    <a href="/2019/08/26/my-bike/" class="title has-link-black-ter is-size-6 has-text-weight-normal">丢车</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/08/24/JAVA-TCP/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
@@ -530,25 +587,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/06/17/hexo-2/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/library.jpg" alt="在一台电脑上管理两个hexo博客">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-17T02:57:52.000Z">2019-06-17</time></div>
-                    <a href="/2019/06/17/hexo-2/" class="title has-link-black-ter is-size-6 has-text-weight-normal">在一台电脑上管理两个hexo博客</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -567,7 +605,7 @@
                     <span class="level-item">八月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -600,7 +638,7 @@
                     <span class="level-item">五月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
@@ -643,13 +681,6 @@
                     <a class="tags has-addons" href="/tags/java/">
                         <span class="tag">java</span>
                         <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/随笔/">
-                        <span class="tag">随笔</span>
-                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -663,226 +694,6 @@
                     </div>
                     
                             
-    
-        
-            
-                
-                    <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
-                        
-                            
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            最新文章
-        </h3>
-        
-        <article class="media">
-            
-            <a href="/2019/08/24/JAVA-TCP/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time></div>
-                    <a href="/2019/08/24/JAVA-TCP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA TCP编程</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/java/">java</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/08/24/JAVA-UDP/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/wuhan.jpg" alt="JAVA UDP编程">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:24:01.000Z">2019-08-24</time></div>
-                    <a href="/2019/08/24/JAVA-UDP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA UDP编程</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/java/">java</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/07/06/Git学习笔记/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/square.jpg" alt="Git学习笔记">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-06T02:15:47.000Z">2019-07-06</time></div>
-                    <a href="/2019/07/06/Git学习笔记/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Git学习笔记</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/06/19/旅人/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/MyRoad.jpg" alt="旅人">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-19T09:24:34.000Z">2019-06-19</time></div>
-                    <a href="/2019/06/19/旅人/" class="title has-link-black-ter is-size-6 has-text-weight-normal">旅人</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/06/17/hexo-2/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/library.jpg" alt="在一台电脑上管理两个hexo博客">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-17T02:57:52.000Z">2019-06-17</time></div>
-                    <a href="/2019/06/17/hexo-2/" class="title has-link-black-ter is-size-6 has-text-weight-normal">在一台电脑上管理两个hexo博客</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-    </div>
-</div>
-
-                                
-                            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/08/">
-                <span class="level-start">
-                    <span class="level-item">八月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">2</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/07/">
-                <span class="level-start">
-                    <span class="level-item">七月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/06/">
-                <span class="level-start">
-                    <span class="level-item">六月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">2</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/05/">
-                <span class="level-start">
-                    <span class="level-item">五月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">3</span>
-                </span>
-            </a>
-        </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-                                
-                            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/MySongs/">
-                        <span class="tag">MySongs</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/git/">
-                        <span class="tag">git</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/hexo/">
-                        <span class="tag">hexo</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/java/">
-                        <span class="tag">java</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/随笔/">
-                        <span class="tag">随笔</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-                                
-                                    
-                    </div>
-                    
                     </div>
                 </div>
             </section>
