@@ -3,6 +3,8 @@ title: 在一台电脑上管理两个hexo博客
 thumbnail: /gallery/library.jpg
 date: 2019-06-17 10:57:52
 tags: hexo 
+categories:
+- hexo
 ---
 出于个人原因，要在电脑上管理两个博客，这期间也是遇到了不少问题，也顺便把解决方法分享给大家  
 

@@ -3,8 +3,8 @@ title: MATLAB学习笔记（一）
 thumbnail: /gallery/matlab.jpg
 date: 2019-09-04 22:07:39
 tags: MATLAB
-catagories:
-- MATLAB
+categories: 
+- MATLAB 
 ---
 ## 一、使用简单命令求解线性方程
 $x_{1}+x_{2}=3$

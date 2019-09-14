@@ -2,6 +2,8 @@
 title: 更换电脑前后对原hexo博客的处理  
 date: 2019-05-23 21:52:57
 tags: hexo 
+categories:
+- hexo
 ---
 有时我们需要更换电脑或重装系统，这时就需要我们对hexo博客源文件进行备份
 
