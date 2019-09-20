@@ -8,22 +8,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>更换电脑前后对原hexo博客的处理 - Kcqnly&#39;s blog</title>
+<title>MATLAB学习笔记（二） - Kcqnly&#39;s blog</title>
 
 
-    <meta name="description" content="有时我们需要更换电脑或重装系统，这时就需要我们对hexo博客源文件进行备份 如果您不是很会用git,我建议您可以先选择用U盘拷贝，然后有时间的时候再好好学习一下git 一、 备份方法一 U盘拷贝并不是所有的文件都要拷贝，只需拷贝根目录下的  _config.yml package.json scaffolds/ source/ themes/   方法二 分支管理">
-<meta name="keywords" content="hexo">
+    <meta name="description" content="数组和矩阵运算矩阵的基本操作">
+<meta name="keywords" content="MATLAB">
 <meta property="og:type" content="article">
-<meta property="og:title" content="更换电脑前后对原hexo博客的处理">
-<meta property="og:url" content="http://yoursite.com/2019/05/23/hexo(1)/index.html">
+<meta property="og:title" content="MATLAB学习笔记（二）">
+<meta property="og:url" content="http://yoursite.com/2019/09/14/MATLAB-2/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
-<meta property="og:description" content="有时我们需要更换电脑或重装系统，这时就需要我们对hexo博客源文件进行备份 如果您不是很会用git,我建议您可以先选择用U盘拷贝，然后有时间的时候再好好学习一下git 一、 备份方法一 U盘拷贝并不是所有的文件都要拷贝，只需拷贝根目录下的  _config.yml package.json scaffolds/ source/ themes/   方法二 分支管理">
+<meta property="og:description" content="数组和矩阵运算矩阵的基本操作">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-13T07:22:23.465Z">
+<meta property="og:updated_time" content="2019-09-14T04:22:05.261Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="更换电脑前后对原hexo博客的处理">
-<meta name="twitter:description" content="有时我们需要更换电脑或重装系统，这时就需要我们对hexo博客源文件进行备份 如果您不是很会用git,我建议您可以先选择用U盘拷贝，然后有时间的时候再好好学习一下git 一、 备份方法一 U盘拷贝并不是所有的文件都要拷贝，只需拷贝根目录下的  _config.yml package.json scaffolds/ source/ themes/   方法二 分支管理">
+<meta name="twitter:title" content="MATLAB学习笔记（二）">
+<meta name="twitter:description" content="数组和矩阵运算矩阵的基本操作">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -95,7 +95,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="更换电脑前后对原hexo博客的处理" height="28">
+                <img src="/images/logo.svg" alt="MATLAB学习笔记（二）" height="28">
             
             </a>
         </div>
@@ -152,17 +152,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-23T13:52:57.000Z">2019-05-23</time>
+                <time class="level-item has-text-grey" datetime="2019-09-14T02:00:18.000Z">2019-09-14</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/hexo/">hexo</a>
+                <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 424 个字)
+                    几秒 读完 (大约 14 个字)
                 </span>
                 
                 
@@ -171,43 +171,18 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                更换电脑前后对原hexo博客的处理
+                MATLAB学习笔记（二）
             
         </h1>
         <div class="content">
-            <p>有时我们需要更换电脑或重装系统，这时就需要我们对hexo博客源文件进行备份</p>
-<p>如果您不是很会用git,我建议您可以先选择用U盘拷贝，然后有时间的时候再好好学习一下git</p>
-<h3 id="一、-备份"><a href="#一、-备份" class="headerlink" title="一、 备份"></a>一、 备份</h3><h4 id="方法一-U盘拷贝"><a href="#方法一-U盘拷贝" class="headerlink" title="方法一 U盘拷贝"></a>方法一 U盘拷贝</h4><p>并不是所有的文件都要拷贝，只需拷贝根目录下的</p>
-<blockquote>
-<p><br>_config.yml<br> <br>package.json<br> <br>scaffolds/<br> <br>source/<br> <br>themes/ </p>
-</blockquote>
-<h4 id="方法二-分支管理"><a href="#方法二-分支管理" class="headerlink" title="方法二 分支管理"></a>方法二 分支管理</h4><a id="more"></a>
-<p>在本地先初始化git仓库</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p>关联远程仓库<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin http://github.com/xxxxxx(你hexo博客的地址)</span><br></pre></td></tr></table></figure></p>
-<p>然后创建并切换到hexo分支<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b hexo</span><br></pre></td></tr></table></figure></p>
-<p>将文件放入暂存区，并推送到远程仓库</p>
-<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/hexo/hexo-1.png" alt></p>
-<h3 id="二、-安装hexo"><a href="#二、-安装hexo" class="headerlink" title="二、 安装hexo"></a>二、 安装hexo</h3><p>(别忘了安装Git和Node.js)<br>鼠标右键Git Bash  输入 (以下指令皆在Git bash中输入)<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
-<h3 id="三、-初始化文件夹"><a href="#三、-初始化文件夹" class="headerlink" title="三、 初始化文件夹"></a>三、 初始化文件夹</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>然后将源文件直接复制过来<br>方法二的朋友们就把指定分支上的文件clone下来就行<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b 分支名 仓库地址</span><br></pre></td></tr></table></figure></p>
-<h3 id="四、安装相应模块"><a href="#四、安装相应模块" class="headerlink" title="四、安装相应模块"></a>四、安装相应模块</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm instal</span><br><span class="line">npm install hexo-deployer-git --save //将文章部署到git的模块</span><br></pre></td></tr></table></figure>
-<h3 id="五、进行测试"><a href="#五、进行测试" class="headerlink" title="五、进行测试"></a>五、进行测试</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就能看到博客了  </p>
-<h3 id="六、重新部署到GitHub上"><a href="#六、重新部署到GitHub上" class="headerlink" title="六、重新部署到GitHub上"></a>六、重新部署到GitHub上</h3><p>删除原先的SSH<br>重新生成SSH添加到github就好了</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-<p>用下面两个指令确认你有没有输对</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
-<p>生成SSH(一路回车就OK)</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-<h1 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h1>
+            <h1 id="数组和矩阵运算"><a href="#数组和矩阵运算" class="headerlink" title="数组和矩阵运算"></a>数组和矩阵运算</h1><h2 id="矩阵的基本操作"><a href="#矩阵的基本操作" class="headerlink" title="矩阵的基本操作"></a>矩阵的基本操作</h2>
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/hexo/">hexo</a>
+                    <a class="has-link-grey -link" href="/tags/MATLAB/">MATLAB</a>
                 </div>
             </div>
         </div>
@@ -228,13 +203,13 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/06/17/hexo-2/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">在一台电脑上管理两个hexo博客</span>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/09/13/Centos7安装jdk12/">
+                <span class="level-item">CentOS7安装jdk12</span>
+                <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
-        
         
     </div>
 </div>
@@ -284,7 +259,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        7
+                        8
                     </p>
                 </div>
             </div>
@@ -415,25 +390,25 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/categories/MATLAB/">
+        <a class="level is-marginless" href="/categories/JAVA/">
             <span class="level-start">
-                <span class="level-item">MATLAB</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/hexo/">
-            <span class="level-start">
-                <span class="level-item">hexo</span>
+                <span class="level-item">JAVA</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">2</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/categories/java/">
+        <a class="level is-marginless" href="/categories/MATLAB/">
             <span class="level-start">
-                <span class="level-item">java</span>
+                <span class="level-item">MATLAB</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/hexo/">
+            <span class="level-start">
+                <span class="level-item">hexo</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">2</span>
@@ -450,7 +425,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/MATLAB/" style="font-size: 10px;">MATLAB</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a>
+        <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/MATLAB/" style="font-size: 20px;">MATLAB</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
     </div>
 </div>
 
@@ -464,6 +439,25 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/09/14/MATLAB-2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="MATLAB学习笔记（二）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-14T02:00:18.000Z">2019-09-14</time></div>
+                    <a href="/2019/09/14/MATLAB-2/" class="title has-link-black-ter is-size-6 has-text-weight-normal">MATLAB学习笔记（二）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -516,7 +510,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time></div>
                     <a href="/2019/08/24/JAVA-TCP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA TCP编程</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/java/">java</a>
+                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
                     </p>
                 </div>
             </div>
@@ -535,26 +529,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:24:01.000Z">2019-08-24</time></div>
                     <a href="/2019/08/24/JAVA-UDP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA UDP编程</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/java/">java</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/07/06/Git学习笔记/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/square.jpg" alt="Git学习笔记">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-06T02:15:47.000Z">2019-07-06</time></div>
-                    <a href="/2019/07/06/Git学习笔记/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Git学习笔记</a>
-                    <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
                     </p>
                 </div>
             </div>
@@ -578,7 +553,7 @@
                     <span class="level-item">九月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -648,9 +623,16 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/JAVA/">
+                        <span class="tag">JAVA</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/MATLAB/">
                         <span class="tag">MATLAB</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -664,13 +646,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/hexo/">
                         <span class="tag">hexo</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/java/">
-                        <span class="tag">java</span>
                         <span class="tag is-grey">2</span>
                     </a>
                 </div>
@@ -694,7 +669,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="更换电脑前后对原hexo博客的处理" height="28">
+                    <img src="/images/logo.svg" alt="MATLAB学习笔记（二）" height="28">
                 
                 </a>
                 <p class="is-size-7">
