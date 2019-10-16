@@ -8,12 +8,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Kcqnly&#39;s blog</title>
+<title>归档: 2019/10 - Kcqnly&#39;s blog</title>
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Kcqnly&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2019/10/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
@@ -98,7 +98,7 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/">主页</a>
                 
                 <a class="navbar-item"
@@ -142,283 +142,44 @@
                     <div class="columns">
                         <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
                             
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/CentOS.jpg" alt="Nginx+php+Mysql环境搭建">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
+
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="tag is-link">
+        十月 2019
+        </h3>
+        <div class="timeline">
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-16T10:40:06.000Z">2019-10-16</time>
+            <article class="media">
                 
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
+                <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="media-left">
+                    <p class="image is-64x64">
+                        <img class="thumbnail" src="/gallery/CentOS.jpg" alt="Nginx+php+Mysql环境搭建">
+                    </p>
+                </a>
+                
+                <div class="media-content">
+                    <div class="content">
+                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-10-16T10:40:06.000Z">2019-10-16</time>
+                        <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Nginx+php+Mysql环境搭建</a>
+                        <div class="level article-meta is-mobile">
+                            <div class="level-left">
+                                
+                                <div class="level-item is-size-7 is-uppercase">
+                                <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 分钟 读完 (大约 243 个字)
-                </span>
-                
-                
-            </div>
+            </article>
+        
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/10/16/Centos7-phpMyAdmin环境搭建/">Nginx+php+Mysql环境搭建</a>
-            
-        </h1>
-        <div class="content">
-            <p>服务器系统：Centos7</p>
-<h1 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h1><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
-<p>出现提示：是否要下载，输入y回车</p>
-<h1 id="安装Mysql"><a href="#安装Mysql" class="headerlink" title="安装Mysql"></a>安装Mysql</h1><p>CentOS7版本将MySQL数据库软件从默认的程序列表中移除，用MariaDB代替了,直接使用yum安装Mysql会出问题</p>
-<ol>
-<li><p>卸载MariaDB</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum list installed | grep mariadb <span class="hljs-comment">#检查mariadb是否已安装</span></span><br><span class="line">yum -y remove mariadb*  <span class="hljs-comment">#将mariadb完全卸载</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装mysql的yum源</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm</span><br><span class="line"><span class="hljs-comment">#下载yum源</span></span><br><span class="line">rpm -ivh mysql-community-release-el7-5.noarch.rpm</span><br><span class="line"><span class="hljs-comment">#安装yum源</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装mysql</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install mysql-server</span><br><span class="line"><span class="hljs-comment"># 按y回车</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动mysql</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置密码</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/Centos7/mysql%E5%AF%86%E7%A0%81.png" alt="mysql1"></p>
-<p>因为之前没有设置密码，所以这里直接按回车<br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/Centos7/mysql%E5%AF%86%E7%A0%812.png" alt="mysql2"><br>输入密码<br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/Centos7/mysql%E5%AF%86%E7%A0%813.png" alt="masql3"><br>依次输入n n n y</p>
-<h1 id="安装php"><a href="#安装php" class="headerlink" title="安装php"></a>安装php</h1>
-        </div>
-        
-        
-        
     </div>
 </div>
 
 
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/09/13/Centos7安装jdk12/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/CentOS.jpg" alt="CentOS7安装jdk12">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-13T07:00:29.000Z">2019-09-13</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 419 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/09/13/Centos7安装jdk12/">CentOS7安装jdk12</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="卸载openjdk"><a href="#卸载openjdk" class="headerlink" title="卸载openjdk"></a>卸载openjdk</h1><h2 id="查找已安装的java包"><a href="#查找已安装的java包" class="headerlink" title="查找已安装的java包"></a>查找已安装的java包</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></table></figure>
-<h2 id="删除已安装的java"><a href="#删除已安装的java" class="headerlink" title="删除已安装的java"></a>删除已安装的java</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps java-1.8.0-openjdk-1.8.0.102-4.b14.el7.x86_64</span><br><span class="line">rpm -e --nodeps java-1.8.0-openjdk-headless-1.8.0.102-4.b14.el7.x86_64</span><br><span class="line">rpm -e --nodeps java-1.7.0-openjdk-headless-1.7.0.111-2.6.7.8.el7.x86_64</span><br><span class="line">rpm -e --nodeps java-1.7.0-openjdk-1.7.0.111-2.6.7.8.el7.x86_64</span><br></pre></td></tr></table></figure>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/09/13/Centos7安装jdk12/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/09/04/MATLAB-1/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/matlab.jpg" alt="MATLAB学习笔记（一）">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-04T14:07:39.000Z">2019-09-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 509 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/09/04/MATLAB-1/">MATLAB学习笔记（一）</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="一、使用简单命令求解线性方程"><a href="#一、使用简单命令求解线性方程" class="headerlink" title="一、使用简单命令求解线性方程"></a>一、使用简单命令求解线性方程</h2><p>$x_{1}+x_{2}=3$<br>$x_{2}+x_{3}=4$<br>$x_1+x_3=5$<br><figure class="highlight matlab hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;A=[<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span>;<span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>;<span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;B=[<span class="hljs-number">3</span>;<span class="hljs-number">5</span>;<span class="hljs-number">4</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;x=A\B</span><br></pre></td></tr></table></figure></p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/09/04/MATLAB-1/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/08/24/JAVA-TCP/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 分钟 读完 (大约 675 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/08/24/JAVA-TCP/">JAVA TCP编程</a>
-            
-        </h1>
-        <div class="content">
-            <p>TCP：Transmission Control Protocol</p>
-<ul>
-<li>传输控制协议，面向连接的协议</li>
-<li>两台机器之间可靠的，无差错的数据传输</li>
-<li>双向字节流传递</li>
-</ul>
-<ol>
-<li>服务器（软件服务器：能实现一定功能，在公开地址上对外服务）<br>创建一个ServerSocket，等待连接</li>
-<li>客户机：创建一个Socket，连接到服务器</li>
-<li>服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接，后续服务器和客户机的对话（这一对Socket）会在一个单独的线程（服务器端）上运行</li>
-<li>服务器继续等待连接，返回步骤1</li></ol>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/08/24/JAVA-TCP/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-    
-<div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/page/0/">上一页</a>
-        </div>
-        <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/page/2/">下一页</a>
-        </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link is-current" href="/">1</a></li>
-            
-            <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
-            
-        </ul>
-    </nav>
-</div>
 
                         </div>
                         
