@@ -6,20 +6,20 @@ tags: git
 ---
 1.在现有目录中初始化Git仓库
 
-```
+```bash
 git init
 ```
 
 2.对文件的跟踪
 
-```
+```bash
 git add *.c
 ```
 
 
 3.提交文件
 
-```
+```bash
 git commit -m "message"
 message为对本次提交的说明
 ```
@@ -30,14 +30,14 @@ message为对本次提交的说明
 
 4.掌握仓库当前的状态
 
-```
+```bash
 git status
 ```
 
 
 5.查看不同
 
-```
+```bash
 git diff file-name
 ```
 
@@ -45,7 +45,7 @@ git diff file-name
 
 6.查看提交日志
 
-```
+```bash
 git log
 ```
 
@@ -53,7 +53,7 @@ git log
 
 7.版本回溯
 
-```
+```bash
 git reset --hard HEAD^
 HEAD表示当前版本
 上一个版本就是HEAD^，上上一个版本就是HEAD^^
@@ -64,7 +64,7 @@ HEAD表示当前版本
 
 8.查看命令历史
 
-```
+```bash
 git reflog
 e475afc HEAD@{1}: reset: moving to HEAD^
 1094adb (HEAD -> master) HEAD@{2}: commit: append GPL
@@ -78,7 +78,7 @@ eaadf4e HEAD@{4}: commit (initial): wrote a readme file
 
 9.丢弃工作区的修改
 
-```
+```bash
 git checkout -- file
 git reset HEAD <file>
 ```
@@ -92,17 +92,17 @@ git reset HEAD <file>
 
 10.删除文件
 
-```
+```bash
 git rm <file>
-如果误删了
-使用git checkout -- text.txt 可恢复
+# 如果误删了
+# 使用git checkout -- text.txt 可恢复
 ```
 
 
 
-11.分支
+11. 分支
 
-```
+```bash
 git branch hexo 创建分支hexo
 git checkout hexo 切换到hexo分支
 git checkout -b hexo 创建并切换到hexo分支
@@ -112,5 +112,19 @@ git branch 查看分支
 ```
 
 
+12. git push失败时的处理措施
+- 报错
+>! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 你的仓库地址
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+- 解决措施
+```bash
+git pull --rebase origin master
+# 先将远程文件同步，再推送
 
-
+git push origin master
+```
