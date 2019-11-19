@@ -145,6 +145,74 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/2019/08/24/JAVA-TCP/" class="image is-7by1">
+            <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 分钟 读完 (大约 675 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/08/24/JAVA-TCP/">JAVA TCP编程</a>
+            
+        </h1>
+        <div class="content">
+            <p>TCP：Transmission Control Protocol</p>
+<ul>
+<li>传输控制协议，面向连接的协议</li>
+<li>两台机器之间可靠的，无差错的数据传输</li>
+<li>双向字节流传递</li>
+</ul>
+<ol>
+<li>服务器（软件服务器：能实现一定功能，在公开地址上对外服务）<br>创建一个ServerSocket，等待连接</li>
+<li>客户机：创建一个Socket，连接到服务器</li>
+<li>服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接，后续服务器和客户机的对话（这一对Socket）会在一个单独的线程（服务器端）上运行</li>
+<li>服务器继续等待连接，返回步骤1</li></ol>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/08/24/JAVA-TCP/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/2019/08/24/JAVA-UDP/" class="image is-7by1">
             <img class="thumbnail" src="/gallery/wuhan.jpg" alt="JAVA UDP编程">
         </a>
@@ -323,64 +391,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-23T13:52:57.000Z">2019-05-23</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/hexo/">hexo</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 424 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/05/23/hexo-1/">更换电脑前后对原hexo博客的处理</a>
-            
-        </h1>
-        <div class="content">
-            <p>有时我们需要更换电脑或重装系统，这时就需要我们对hexo博客源文件进行备份</p>
-<p>如果您不是很会用git,我建议您可以先选择用U盘拷贝，然后有时间的时候再好好学习一下git</p>
-<h3 id="一、-备份"><a href="#一、-备份" class="headerlink" title="一、 备份"></a>一、 备份</h3><h4 id="方法一-U盘拷贝"><a href="#方法一-U盘拷贝" class="headerlink" title="方法一 U盘拷贝"></a>方法一 U盘拷贝</h4><p>并不是所有的文件都要拷贝，只需拷贝根目录下的</p>
-<blockquote>
-<p><br>_config.yml<br> <br>package.json<br> <br>scaffolds/<br> <br>source/<br> <br>themes/ </p>
-</blockquote>
-<h4 id="方法二-分支管理"><a href="#方法二-分支管理" class="headerlink" title="方法二 分支管理"></a>方法二 分支管理</h4>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/05/23/hexo-1/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -388,7 +398,7 @@
         <div class="pagination-previous">
             <a class="is-flex-grow has-text-black-ter" href="/">上一页</a>
         </div>
-        <div class="pagination-next is-invisible is-hidden-mobile">
+        <div class="pagination-next">
             <a class="is-flex-grow has-text-black-ter" href="/page/3/">下一页</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
@@ -396,6 +406,8 @@
             <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
             
             <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
             
         </ul>
     </nav>
@@ -444,7 +456,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        9
                     </p>
                 </div>
             </div>
@@ -464,7 +476,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        6
                     </p>
                 </div>
             </div>
@@ -572,7 +584,7 @@
                 <span class="level-item">CentOS</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">1</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/JAVA/">
@@ -580,7 +592,7 @@
                 <span class="level-item">JAVA</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">3</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/MATLAB/">
@@ -610,7 +622,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/CentOS/" style="font-size: 20px;">CentOS</a> <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/MATLAB/" style="font-size: 10px;">MATLAB</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
+        <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/ESP8266/" style="font-size: 10px;">ESP8266</a> <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/MATLAB/" style="font-size: 10px;">MATLAB</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a>
     </div>
 </div>
 
@@ -627,18 +639,37 @@
         
         <article class="media">
             
-            <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="media-left">
+            <a href="/2019/11/19/JAVA-Mail/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/CentOS.jpg" alt="Nginx+php+Mysql环境搭建">
+                    <img class="thumbnail" src="/gallery/java.jpg" alt="用JAVA实现邮件发送的两种选择">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T10:40:06.000Z">2019-10-16</time></div>
-                    <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Nginx+php+Mysql环境搭建</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-19T15:40:55.000Z">2019-11-19</time></div>
+                    <a href="/2019/11/19/JAVA-Mail/" class="title has-link-black-ter is-size-6 has-text-weight-normal">用JAVA实现邮件发送的两种选择</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
+                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/27/WebREPL/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="WebREPL">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-27T12:37:01.000Z">2019-10-27</time></div>
+                    <a href="/2019/10/27/WebREPL/" class="title has-link-black-ter is-size-6 has-text-weight-normal">WebREPL</a>
+                    <p class="is-size-7 is-uppercase">
+                        
                     </p>
                 </div>
             </div>
@@ -701,25 +732,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/08/24/JAVA-UDP/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/wuhan.jpg" alt="JAVA UDP编程">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:24:01.000Z">2019-08-24</time></div>
-                    <a href="/2019/08/24/JAVA-UDP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA UDP编程</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -731,6 +743,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/10/">
@@ -814,14 +837,21 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/CentOS/">
                         <span class="tag">CentOS</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ESP8266/">
+                        <span class="tag">ESP8266</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/JAVA/">
                         <span class="tag">JAVA</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -872,18 +902,37 @@
         
         <article class="media">
             
-            <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="media-left">
+            <a href="/2019/11/19/JAVA-Mail/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/CentOS.jpg" alt="Nginx+php+Mysql环境搭建">
+                    <img class="thumbnail" src="/gallery/java.jpg" alt="用JAVA实现邮件发送的两种选择">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T10:40:06.000Z">2019-10-16</time></div>
-                    <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Nginx+php+Mysql环境搭建</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-19T15:40:55.000Z">2019-11-19</time></div>
+                    <a href="/2019/11/19/JAVA-Mail/" class="title has-link-black-ter is-size-6 has-text-weight-normal">用JAVA实现邮件发送的两种选择</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
+                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/27/WebREPL/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="WebREPL">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-27T12:37:01.000Z">2019-10-27</time></div>
+                    <a href="/2019/10/27/WebREPL/" class="title has-link-black-ter is-size-6 has-text-weight-normal">WebREPL</a>
+                    <p class="is-size-7 is-uppercase">
+                        
                     </p>
                 </div>
             </div>
@@ -946,25 +995,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/08/24/JAVA-UDP/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/wuhan.jpg" alt="JAVA UDP编程">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:24:01.000Z">2019-08-24</time></div>
-                    <a href="/2019/08/24/JAVA-UDP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA UDP编程</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -976,6 +1006,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/10/">
@@ -1059,14 +1100,21 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/CentOS/">
                         <span class="tag">CentOS</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ESP8266/">
+                        <span class="tag">ESP8266</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/JAVA/">
                         <span class="tag">JAVA</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 

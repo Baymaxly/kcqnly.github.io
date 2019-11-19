@@ -8,23 +8,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Nginx+php+Mysql环境搭建 - Kcqnly&#39;s blog</title>
+<title>Kcqnly&#39;s blog</title>
 
 
-    <meta name="description" content="服务器系统：Centos7 安装Nginx1yum install nginx 出现提示：是否要下载，输入y回车 安装MysqlCentOS7版本将MySQL数据库软件从默认的程序列表中移除，用MariaDB代替了,直接使用yum安装Mysql会出问题  卸载MariaDB 12yum list installed | grep mariadb #检查mariadb是否已安装yum -y remo">
-<meta name="keywords" content="CentOS">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Nginx+php+Mysql环境搭建">
-<meta property="og:url" content="http://yoursite.com/2019/10/16/Centos7-phpMyAdmin环境搭建/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Kcqnly&#39;s blog">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
-<meta property="og:description" content="服务器系统：Centos7 安装Nginx1yum install nginx 出现提示：是否要下载，输入y回车 安装MysqlCentOS7版本将MySQL数据库软件从默认的程序列表中移除，用MariaDB代替了,直接使用yum安装Mysql会出问题  卸载MariaDB 12yum list installed | grep mariadb #检查mariadb是否已安装yum -y remo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/gallery/CentOS.jpg">
-<meta property="og:updated_time" content="2019-10-16T11:56:42.550Z">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nginx+php+Mysql环境搭建">
-<meta name="twitter:description" content="服务器系统：Centos7 安装Nginx1yum install nginx 出现提示：是否要下载，输入y回车 安装MysqlCentOS7版本将MySQL数据库软件从默认的程序列表中移除，用MariaDB代替了,直接使用yum安装Mysql会出问题  卸载MariaDB 12yum list installed | grep mariadb #检查mariadb是否已安装yum -y remo">
-<meta name="twitter:image" content="http://yoursite.com/gallery/CentOS.jpg">
+<meta name="twitter:title" content="Kcqnly&#39;s blog">
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
 
@@ -89,13 +84,13 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body class="is-2-column">
+<body class="is-3-column">
     <nav class="navbar navbar-main">
     <div class="container">
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Nginx+php+Mysql环境搭建" height="28">
+                <img src="/images/logo.svg" alt="Kcqnly&#39;s blog" height="28">
             
             </a>
         </div>
@@ -145,30 +140,25 @@
             <section class="section">
                 <div class="container">
                     <div class="columns">
-                        <div class="column is-8-tablet is-9-desktop is-9-widescreen has-order-2 column-main">
-                            <div class="card">
-    
-    <div class="card-image">
-        <span  class="image is-7by1">
-            <img class="thumbnail" src="/gallery/CentOS.jpg" alt="Nginx+php+Mysql环境搭建">
-        </span>
-    </div>
+                        <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                            
+    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-16T10:40:06.000Z">2019-10-16</time>
+                <time class="level-item has-text-grey" datetime="2019-05-23T13:52:57.000Z">2019-05-23</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
+                <a class="has-link-grey -link" href="/categories/hexo/">hexo</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 240 个字)
+                    3 分钟 读完 (大约 424 个字)
                 </span>
                 
                 
@@ -177,51 +167,29 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Nginx+php+Mysql环境搭建
+                <a class="has-link-black-ter" href="/2019/05/23/hexo-1/">更换电脑前后对原hexo博客的处理</a>
             
         </h1>
         <div class="content">
-            <p>服务器系统：Centos7</p>
-<h1 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h1><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
-<p>出现提示：是否要下载，输入y回车</p>
-<h1 id="安装Mysql"><a href="#安装Mysql" class="headerlink" title="安装Mysql"></a>安装Mysql</h1><p>CentOS7版本将MySQL数据库软件从默认的程序列表中移除，用MariaDB代替了,直接使用yum安装Mysql会出问题</p>
-<ol>
-<li><p>卸载MariaDB</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum list installed | grep mariadb <span class="hljs-comment">#检查mariadb是否已安装</span></span><br><span class="line">yum -y remove mariadb*  <span class="hljs-comment">#将mariadb完全卸载</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装mysql的yum源</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm</span><br><span class="line"><span class="hljs-comment">#下载yum源</span></span><br><span class="line">rpm -ivh mysql-community-release-el7-5.noarch.rpm</span><br><span class="line"><span class="hljs-comment">#安装yum源</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装mysql</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install mysql-server</span><br><span class="line"><span class="hljs-comment"># 按y回车</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动mysql</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置密码</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/Centos7/mysql%E5%AF%86%E7%A0%81.png" alt></p>
-<p>因为之前没有设置密码，所以这里直接按回车<br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/Centos7/mysql%E5%AF%86%E7%A0%812.png" alt><br>输入密码<br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/Centos7/mysql%E5%AF%86%E7%A0%813.png" alt><br>依次输入n n n y</p>
-<h1 id="安装php"><a href="#安装php" class="headerlink" title="安装php"></a>安装php</h1>
+            <p>有时我们需要更换电脑或重装系统，这时就需要我们对hexo博客源文件进行备份</p>
+<p>如果您不是很会用git,我建议您可以先选择用U盘拷贝，然后有时间的时候再好好学习一下git</p>
+<h3 id="一、-备份"><a href="#一、-备份" class="headerlink" title="一、 备份"></a>一、 备份</h3><h4 id="方法一-U盘拷贝"><a href="#方法一-U盘拷贝" class="headerlink" title="方法一 U盘拷贝"></a>方法一 U盘拷贝</h4><p>并不是所有的文件都要拷贝，只需拷贝根目录下的</p>
+<blockquote>
+<p><br>_config.yml<br> <br>package.json<br> <br>scaffolds/<br> <br>source/<br> <br>themes/ </p>
+</blockquote>
+<h4 id="方法二-分支管理"><a href="#方法二-分支管理" class="headerlink" title="方法二 分支管理"></a>方法二 分支管理</h4>
         </div>
         
-        <div class="level is-size-7 is-uppercase">
+        
+        <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/CentOS/">CentOS</a>
+                <a class="button is-size-7 is-light" href="/2019/05/23/hexo-1/#more">阅读更多</a>
                 </div>
             </div>
         </div>
         
         
-        
-        <div class="social-share"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
-<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
-        
     </div>
 </div>
 
@@ -229,21 +197,30 @@
 
 
 
+
+
+
+
+    
 <div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/09/13/Centos7安装jdk12/">
-                <span class="level-item">CentOS7安装jdk12</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/page/2/">上一页</a>
         </div>
-        
-    </div>
+        <div class="pagination-next is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/page/4/">下一页</a>
+        </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
+            
+            <li><a class="pagination-link is-current" href="/page/3/">3</a></li>
+            
+        </ul>
+    </nav>
 </div>
-
-
 
                         </div>
                         
@@ -251,7 +228,7 @@
         
             
                 
-                    <div class="column is-4-tablet is-3-desktop is-3-widescreen  has-order-1 column-left ">
+                    <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
                         
                             
 <div class="card widget">
@@ -288,7 +265,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        9
                     </p>
                 </div>
             </div>
@@ -308,7 +285,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        6
                     </p>
                 </div>
             </div>
@@ -416,7 +393,7 @@
                 <span class="level-item">CentOS</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">1</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/JAVA/">
@@ -424,7 +401,7 @@
                 <span class="level-item">JAVA</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">3</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/MATLAB/">
@@ -454,13 +431,13 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/CentOS/" style="font-size: 20px;">CentOS</a> <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/MATLAB/" style="font-size: 10px;">MATLAB</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
+        <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/ESP8266/" style="font-size: 10px;">ESP8266</a> <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/MATLAB/" style="font-size: 10px;">MATLAB</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a>
     </div>
 </div>
 
                                 
                                     
-                                        <div class="column-right-shadow  ">
+                                        <div class="column-right-shadow is-hidden-widescreen ">
                                             
                                                 
 <div class="card widget">
@@ -471,18 +448,37 @@
         
         <article class="media">
             
-            <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="media-left">
+            <a href="/2019/11/19/JAVA-Mail/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/CentOS.jpg" alt="Nginx+php+Mysql环境搭建">
+                    <img class="thumbnail" src="/gallery/java.jpg" alt="用JAVA实现邮件发送的两种选择">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T10:40:06.000Z">2019-10-16</time></div>
-                    <a href="/2019/10/16/Centos7-phpMyAdmin环境搭建/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Nginx+php+Mysql环境搭建</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-19T15:40:55.000Z">2019-11-19</time></div>
+                    <a href="/2019/11/19/JAVA-Mail/" class="title has-link-black-ter is-size-6 has-text-weight-normal">用JAVA实现邮件发送的两种选择</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
+                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/27/WebREPL/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="WebREPL">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-27T12:37:01.000Z">2019-10-27</time></div>
+                    <a href="/2019/10/27/WebREPL/" class="title has-link-black-ter is-size-6 has-text-weight-normal">WebREPL</a>
+                    <p class="is-size-7 is-uppercase">
+                        
                     </p>
                 </div>
             </div>
@@ -545,25 +541,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/08/24/JAVA-UDP/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/wuhan.jpg" alt="JAVA UDP编程">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:24:01.000Z">2019-08-24</time></div>
-                    <a href="/2019/08/24/JAVA-UDP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA UDP编程</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -575,6 +552,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/10/">
@@ -658,14 +646,21 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/CentOS/">
                         <span class="tag">CentOS</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ESP8266/">
+                        <span class="tag">ESP8266</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/JAVA/">
                         <span class="tag">JAVA</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -700,6 +695,268 @@
                     </div>
                     
                             
+                                
+    
+        
+            
+                
+                    <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+                        
+                            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/11/19/JAVA-Mail/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/java.jpg" alt="用JAVA实现邮件发送的两种选择">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-19T15:40:55.000Z">2019-11-19</time></div>
+                    <a href="/2019/11/19/JAVA-Mail/" class="title has-link-black-ter is-size-6 has-text-weight-normal">用JAVA实现邮件发送的两种选择</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/27/WebREPL/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="WebREPL">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-27T12:37:01.000Z">2019-10-27</time></div>
+                    <a href="/2019/10/27/WebREPL/" class="title has-link-black-ter is-size-6 has-text-weight-normal">WebREPL</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/09/13/Centos7安装jdk12/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/CentOS.jpg" alt="CentOS7安装jdk12">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-13T07:00:29.000Z">2019-09-13</time></div>
+                    <a href="/2019/09/13/Centos7安装jdk12/" class="title has-link-black-ter is-size-6 has-text-weight-normal">CentOS7安装jdk12</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/09/04/MATLAB-1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/matlab.jpg" alt="MATLAB学习笔记（一）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-04T14:07:39.000Z">2019-09-04</time></div>
+                    <a href="/2019/09/04/MATLAB-1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">MATLAB学习笔记（一）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08/24/JAVA-TCP/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time></div>
+                    <a href="/2019/08/24/JAVA-TCP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA TCP编程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/JAVA/">JAVA</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+                                
+                            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/10/">
+                <span class="level-start">
+                    <span class="level-item">十月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/09/">
+                <span class="level-start">
+                    <span class="level-item">九月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">八月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/07/">
+                <span class="level-start">
+                    <span class="level-item">七月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+                                
+                            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/CentOS/">
+                        <span class="tag">CentOS</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ESP8266/">
+                        <span class="tag">ESP8266</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JAVA/">
+                        <span class="tag">JAVA</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/MATLAB/">
+                        <span class="tag">MATLAB</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/git/">
+                        <span class="tag">git</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/hexo/">
+                        <span class="tag">hexo</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+                                
+                                    
+                    </div>
+                    
+                                    
                     </div>
                 </div>
             </section>
@@ -709,7 +966,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Nginx+php+Mysql环境搭建" height="28">
+                    <img src="/images/logo.svg" alt="Kcqnly&#39;s blog" height="28">
                 
                 </a>
                 <p class="is-size-7">
