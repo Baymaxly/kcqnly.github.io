@@ -8,23 +8,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Git学习笔记 - Kcqnly&#39;s blog</title>
+<title>Java-Mail - Kcqnly&#39;s blog</title>
 
 
-    <meta name="description" content="1.在现有目录中初始化Git仓库 1git init 2.对文件的跟踪 1git add *.c 3.提交文件 12git commit -m &quot;message&quot;message为对本次提交的说明">
-<meta name="keywords" content="git">
+    <meta name="description" content="之前做过的好几个项目都用到了JAVA发送邮件的功能，这里放出我用过的两种方法，其实现在只用第二种方法，hhh。">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git学习笔记">
-<meta property="og:url" content="http://yoursite.com/2019/07/06/Git学习笔记/index.html">
+<meta property="og:title" content="Java-Mail">
+<meta property="og:url" content="http://yoursite.com/2019/11/22/Java-Mail/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
-<meta property="og:description" content="1.在现有目录中初始化Git仓库 1git init 2.对文件的跟踪 1git add *.c 3.提交文件 12git commit -m &quot;message&quot;message为对本次提交的说明">
+<meta property="og:description" content="之前做过的好几个项目都用到了JAVA发送邮件的功能，这里放出我用过的两种方法，其实现在只用第二种方法，hhh。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/gallery/square.jpg">
-<meta property="og:updated_time" content="2019-10-10T08:25:25.017Z">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-11-22T06:03:59.667Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git学习笔记">
-<meta name="twitter:description" content="1.在现有目录中初始化Git仓库 1git init 2.对文件的跟踪 1git add *.c 3.提交文件 12git commit -m &quot;message&quot;message为对本次提交的说明">
-<meta name="twitter:image" content="http://yoursite.com/gallery/square.jpg">
+<meta name="twitter:title" content="Java-Mail">
+<meta name="twitter:description" content="之前做过的好几个项目都用到了JAVA发送邮件的功能，这里放出我用过的两种方法，其实现在只用第二种方法，hhh。">
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
 
@@ -95,7 +95,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Git学习笔记" height="28">
+                <img src="/images/logo.svg" alt="Java-Mail" height="28">
             
             </a>
         </div>
@@ -148,23 +148,21 @@
                         <div class="column is-8-tablet is-9-desktop is-9-widescreen has-order-2 column-main">
                             <div class="card">
     
-    <div class="card-image">
-        <span  class="image is-7by1">
-            <img class="thumbnail" src="/gallery/square.jpg" alt="Git学习笔记">
-        </span>
-    </div>
-    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-06T02:15:47.000Z">2019-07-06</time>
+                <time class="level-item has-text-grey" datetime="2019-11-22T06:02:57.000Z">2019-11-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Java/">Java</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 563 个字)
+                    6 分钟 读完 (大约 891 个字)
                 </span>
                 
                 
@@ -173,56 +171,29 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Git学习笔记
+                Java-Mail
             
         </h1>
         <div class="content">
-            <p>1.在现有目录中初始化Git仓库</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p>2.对文件的跟踪</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add *.c</span><br></pre></td></tr></table></figure>
-<p>3.提交文件</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="hljs-string">"message"</span></span><br><span class="line">message为对本次提交的说明</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>4.掌握仓库当前的状态</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
-<p>5.查看不同</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff file-name</span><br></pre></td></tr></table></figure>
-<p>6.查看提交日志</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="hljs-built_in">log</span></span><br></pre></td></tr></table></figure>
-<p>7.版本回溯</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD^</span><br><span class="line">HEAD表示当前版本</span><br><span class="line">上一个版本就是HEAD^，上上一个版本就是HEAD^^</span><br><span class="line">当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。</span><br></pre></td></tr></table></figure>
-<p>8.查看命令历史</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br><span class="line">e475afc HEAD@&#123;1&#125;: reset: moving to HEAD^</span><br><span class="line">1094adb (HEAD -&gt; master) HEAD@&#123;2&#125;: commit: append GPL</span><br><span class="line">e475afc HEAD@&#123;3&#125;: commit: add distributed</span><br><span class="line">eaadf4e HEAD@&#123;4&#125;: commit (initial): wrote a readme file</span><br><span class="line">然后再使用git reset --hard 1094a</span><br><span class="line">就可以返回到append GPL的那个版本</span><br></pre></td></tr></table></figure>
-<p>9.丢弃工作区的修改</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- file</span><br><span class="line">git reset HEAD &lt;file&gt;</span><br></pre></td></tr></table></figure>
-<p>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout – file。</p>
-<p>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。</file></p>
-<p>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。</p>
-<p>10.删除文件</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm &lt;file&gt;</span><br><span class="line"><span class="hljs-comment"># 如果误删了</span></span><br><span class="line"><span class="hljs-comment"># 使用git checkout -- text.txt 可恢复</span></span><br></pre></td></tr></table></figure>
-<ol start="11">
-<li>分支</li>
-</ol>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git branch hexo 创建分支hexo</span><br><span class="line">git checkout hexo 切换到hexo分支</span><br><span class="line">git checkout -b hexo 创建并切换到hexo分支</span><br><span class="line">git merge hexo 将hexo分支合并到master分支</span><br><span class="line">git branch -d hexo 删除hexo分支</span><br><span class="line">git branch 查看分支</span><br></pre></td></tr></table></figure>
-<ol start="12">
-<li>git push失败时的处理措施</li>
-</ol>
-<ul>
-<li>报错<blockquote>
-<p>! [rejected]        master -&gt; master (fetch first)<br>error: failed to push some refs to 你的仓库地址<br>hint: Updates were rejected because the remote contains work that you do<br>hint: not have locally. This is usually caused by another repository pushing<br>hint: to the same ref. You may want to first integrate the remote changes<br>hint: (e.g., ‘git pull …’) before pushing again.<br>hint: See the ‘Note about fast-forwards’ in ‘git push –help’ for details.</p>
-</blockquote>
-</li>
-<li>解决措施<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase origin master</span><br><span class="line"><span class="hljs-comment"># 先将远程文件同步，再推送</span></span><br><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li>
-</ul>
-
+            <p>之前做过的好几个项目都用到了JAVA发送邮件的功能，这里放出我用过的两种方法，其实现在只用第二种方法，hhh。<br><a id="more"></a></p>
+<h2 id="方法一-使用javax-mail包"><a href="#方法一-使用javax-mail包" class="headerlink" title="方法一 使用javax.mail包"></a>方法一 使用javax.mail包</h2><p>有一说一，这个真的捞，我之前用这个问题是真的多，windows上可以发，linux不能发……我是被这个折磨了好几晚</p>
+<p>使用前先添加Maven依赖</p>
+<figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- https://mvnrepository.com/artifact/javax.mail/mail --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>javax.mail<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mail<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.4<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>上代码</p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> javax.mail.Message;</span><br><span class="line"><span class="hljs-keyword">import</span> javax.mail.MessagingException;</span><br><span class="line"><span class="hljs-keyword">import</span> javax.mail.Session;</span><br><span class="line"><span class="hljs-keyword">import</span> javax.mail.Transport;</span><br><span class="line"><span class="hljs-keyword">import</span> javax.mail.internet.AddressException;</span><br><span class="line"><span class="hljs-keyword">import</span> javax.mail.internet.InternetAddress;</span><br><span class="line"><span class="hljs-keyword">import</span> javax.mail.internet.MimeMessage;</span><br><span class="line"><span class="hljs-keyword">import</span> java.util.Date;</span><br><span class="line"><span class="hljs-keyword">import</span> java.util.Properties;</span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MailSend</span> </span>&#123;</span><br><span class="line">    <span class="hljs-comment">//发件人地址</span></span><br><span class="line">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String senderAddress = <span class="hljs-string">"xxx@163.com"</span>;</span><br><span class="line">    <span class="hljs-comment">//收件人地址</span></span><br><span class="line">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String recipientAddress ;</span><br><span class="line">    <span class="hljs-comment">//发件人账户名（网易邮箱用户名）</span></span><br><span class="line">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String senderAccount = <span class="hljs-string">"xxx"</span>;</span><br><span class="line">    <span class="hljs-comment">//发件人账户密码(网易邮箱的授权码)</span></span><br><span class="line">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String senderPassword = <span class="hljs-string">"xxx"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">private</span> Properties props;</span><br><span class="line">    <span class="hljs-keyword">private</span> Session session;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MailSend</span><span class="hljs-params">(String receive)</span></span></span><br><span class="line"><span class="hljs-function">    </span>&#123;</span><br><span class="line">        <span class="hljs-keyword">this</span>.recipientAddress=receive;</span><br><span class="line">        <span class="hljs-comment">//1、连接邮件服务器的参数配置</span></span><br><span class="line">        props = System.getProperties();</span><br><span class="line">        <span class="hljs-comment">//设置用户的认证方式</span></span><br><span class="line">        props.setProperty(<span class="hljs-string">"mail.smtp.auth"</span>, <span class="hljs-string">"true"</span>);</span><br><span class="line">        <span class="hljs-comment">//设置传输协议</span></span><br><span class="line">        props.setProperty(<span class="hljs-string">"mail.transport.protocol"</span>, <span class="hljs-string">"smtp"</span>);</span><br><span class="line">        <span class="hljs-comment">//设置发件人的SMTP服务器地址</span></span><br><span class="line">        props.setProperty(<span class="hljs-string">"mail.smtp.host"</span>, <span class="hljs-string">"smtp.163.com"</span>);</span><br><span class="line"></span><br><span class="line">        props.put(<span class="hljs-string">"mail.smtp.ssl.enable"</span>, <span class="hljs-keyword">true</span>);</span><br><span class="line">        <span class="hljs-comment">//2、创建定义整个应用程序所需的环境信息的 Session 对象</span></span><br><span class="line">        session = Session.getInstance(props);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment">     * 获得创建一封邮件的实例对象</span></span><br><span class="line"><span class="hljs-comment">     * <span class="hljs-doctag">@param</span> session</span></span><br><span class="line"><span class="hljs-comment">     * <span class="hljs-doctag">@return</span></span></span><br><span class="line"><span class="hljs-comment">     * <span class="hljs-doctag">@throws</span> MessagingException</span></span><br><span class="line"><span class="hljs-comment">     * <span class="hljs-doctag">@throws</span> AddressException</span></span><br><span class="line"><span class="hljs-comment">     */</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> MimeMessage <span class="hljs-title">getMimeMessage</span><span class="hljs-params">(Session session,String data)</span> <span class="hljs-keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        <span class="hljs-comment">//创建一封邮件的实例对象</span></span><br><span class="line">        MimeMessage msg = <span class="hljs-keyword">new</span> MimeMessage(session);</span><br><span class="line">        <span class="hljs-comment">//设置发件人地址</span></span><br><span class="line">        msg.setFrom(<span class="hljs-keyword">new</span> InternetAddress(senderAddress));</span><br><span class="line"></span><br><span class="line">        msg.setRecipient(MimeMessage.RecipientType.TO,<span class="hljs-keyword">new</span> InternetAddress(recipientAddress));</span><br><span class="line">        <span class="hljs-comment">//设置邮件主题</span></span><br><span class="line">        msg.setSubject(<span class="hljs-string">"Hello"</span>,<span class="hljs-string">"UTF-8"</span>);</span><br><span class="line">    </span><br><span class="line">        msg.setText(data);</span><br><span class="line">        <span class="hljs-comment">//设置邮件的发送时间,默认立即发送</span></span><br><span class="line">        msg.setSentDate(<span class="hljs-keyword">new</span> Date());</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">return</span> msg;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">(String s)</span> <span class="hljs-keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="hljs-comment">//3、创建邮件的实例对象</span></span><br><span class="line">        Message msg = getMimeMessage(session,s);</span><br><span class="line">        <span class="hljs-comment">//4、根据session对象获取邮件传输对象Transport</span></span><br><span class="line">        Transport transport = session.getTransport();</span><br><span class="line">        <span class="hljs-comment">//设置发件人的账户名和密码</span></span><br><span class="line">        transport.connect(senderAccount, senderPassword);</span><br><span class="line">        <span class="hljs-comment">//发送邮件，并发送到所有收件人地址，message.getAllRecipients() 获取到的是在创建邮件对象时添加的所有收件人, 抄送人, 密送人</span></span><br><span class="line">        transport.sendMessage(msg,msg.getAllRecipients());</span><br><span class="line"></span><br><span class="line">        <span class="hljs-comment">//如果只想发送给指定的人，可以如下写法</span></span><br><span class="line">        <span class="hljs-comment">//transport.sendMessage(msg, new Address[]&#123;new InternetAddress("xxx@qq.com")&#125;);</span></span><br><span class="line"></span><br><span class="line">        <span class="hljs-comment">//5、关闭邮件连接</span></span><br><span class="line">        transport.close();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个捞的很，发送HTML语句会出问题，只能发纯文本，这根本不能满足个性化需求啊，难搞</p>
+<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/%E7%86%8A%E7%8C%AB%E5%A4%B4.jpg" alt></p>
+<h1 id="还是看方法二吧"><a href="#还是看方法二吧" class="headerlink" title="还是看方法二吧"></a>还是看方法二吧</h1><h2 id="使用apache-commons-mail包"><a href="#使用apache-commons-mail包" class="headerlink" title="使用apache.commons.mail包"></a>使用apache.commons.mail包</h2><p>添加Maven依赖<br><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.commons<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>commons-email<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.4<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>代码代码，来看代码<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> org.apache.commons.mail.EmailException;</span><br><span class="line"><span class="hljs-keyword">import</span> org.apache.commons.mail.HtmlEmail;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MailSend</span> </span>&#123;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;</span><br><span class="line">        HtmlEmail email = <span class="hljs-keyword">new</span> HtmlEmail();</span><br><span class="line">        <span class="hljs-keyword">try</span> &#123;</span><br><span class="line">            <span class="hljs-comment">// 这里是SMTP发送服务器的名字：163的如下："smtp.163.com"</span></span><br><span class="line">            email.setHostName(<span class="hljs-string">"smtp.163.com"</span>);</span><br><span class="line">            <span class="hljs-comment">// 字符编码集的设置</span></span><br><span class="line">            email.setCharset(<span class="hljs-string">"utf-8"</span>);</span><br><span class="line">            <span class="hljs-comment">// 收件人的邮箱</span></span><br><span class="line">            email.addTo(<span class="hljs-string">"xxx@qq.com"</span>);</span><br><span class="line">            <span class="hljs-comment">// 发送人的邮箱2</span></span><br><span class="line">            email.setFrom(<span class="hljs-string">"xxx@163.com"</span>);</span><br><span class="line">            <span class="hljs-comment">// 如果需要认证信息的话，设置认证：用户名-密码     ***是你开启POP3服务时的授权码，不是登录密码</span></span><br><span class="line">            email.setAuthentication(<span class="hljs-string">"xxx"</span>, <span class="hljs-string">"xxx"</span>);</span><br><span class="line">            <span class="hljs-comment">// 要发送的邮件主题</span></span><br><span class="line">            email.setSubject(<span class="hljs-string">"Test"</span>);</span><br><span class="line">            <span class="hljs-comment">// 要发送的信息，由于使用了HtmlEmail，可以在邮件内容中使用HTML标签</span></span><br><span class="line">            email.setMsg(<span class="hljs-string">"&lt;img src='https://xxx.jpg'/&gt;"</span>);</span><br><span class="line">            <span class="hljs-comment">// 发送</span></span><br><span class="line">            email.send();</span><br><span class="line">            System.out.println(<span class="hljs-string">"发送成功"</span>);</span><br><span class="line">        &#125; <span class="hljs-keyword">catch</span> (EmailException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            System.out.println(<span class="hljs-string">"发送失败"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="有一说一，爽"><a href="#有一说一，爽" class="headerlink" title="有一说一，爽"></a>有一说一，爽</h3><p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/java/mail.jpg" alt></p>
+<h1 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h1>
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/git/">git</a>
+                    <a class="has-link-grey -link" href="/tags/Java/">Java</a>
                 </div>
             </div>
         </div>
@@ -243,17 +214,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/09/04/MATLAB-1/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">MATLAB学习笔记（一）</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/06/17/hexo-2/">
-                <span class="level-item">在一台电脑上管理两个hexo博客</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/22/Java-UDP/">
+                <span class="level-item">Java-UDP</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -734,7 +698,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Git学习笔记" height="28">
+                    <img src="/images/logo.svg" alt="Java-Mail" height="28">
                 
                 </a>
                 <p class="is-size-7">
