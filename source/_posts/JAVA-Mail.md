@@ -2,9 +2,9 @@
 title: 用JAVA实现邮件发送的两种选择
 date: 2019-11-19 23:40:55 
 thumbnail: /gallery/java.jpg
-tags: JAVA 
+tags: Java 
 categories: 
-- JAVA 
+- Java
 ---
 之前做过的好几个项目都用到了JAVA发送邮件的功能，这里放出我用过的两种方法，其实现在只用第二种方法，hhh。
 <!--more-->

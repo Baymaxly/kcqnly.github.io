@@ -2,9 +2,9 @@
 title: JAVA UDP编程 
 thumbnail: /gallery/wuhan.jpg
 date: 2019-08-24 19:24:01
-tags: JAVA
+tags: Java
 categories:
-- JAVA
+- Java
 ---
 
 ## UDP:无连接无状态的通信协议

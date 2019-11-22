@@ -2,9 +2,9 @@
 title: JAVA TCP编程 
 thumbnail: /gallery/flyingfish.jpg
 date: 2019-08-24 19:25:01
-tags: JAVA 
+tags: Java
 categories: 
-- JAVA 
+- Java
 ---
 
 
