@@ -8,23 +8,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>CentOS7安装jdk12 - Kcqnly&#39;s blog</title>
+<title>JAVA TCP编程 - Kcqnly&#39;s blog</title>
 
 
-    <meta name="description" content="卸载openjdk查找已安装的java包1rpm -qa | grep java 删除已安装的java1234rpm -e --nodeps java-1.8.0-openjdk-1.8.0.102-4.b14.el7.x86_64rpm -e --nodeps java-1.8.0-openjdk-headless-1.8.0.102-4.b14.el7.x86_64rpm -e --nodep">
-<meta name="keywords" content="CentOS">
+    <meta name="description" content="TCP：Transmission Control Protocol  传输控制协议，面向连接的协议 两台机器之间可靠的，无差错的数据传输 双向字节流传递   服务器（软件服务器：能实现一定功能，在公开地址上对外服务）创建一个ServerSocket，等待连接 客户机：创建一个Socket，连接到服务器 服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CentOS7安装jdk12">
-<meta property="og:url" content="http://yoursite.com/2019/09/13/Centos7安装jdk12/index.html">
+<meta property="og:title" content="JAVA TCP编程">
+<meta property="og:url" content="http://yoursite.com/2019/08/24/Java-TCP/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
-<meta property="og:description" content="卸载openjdk查找已安装的java包1rpm -qa | grep java 删除已安装的java1234rpm -e --nodeps java-1.8.0-openjdk-1.8.0.102-4.b14.el7.x86_64rpm -e --nodeps java-1.8.0-openjdk-headless-1.8.0.102-4.b14.el7.x86_64rpm -e --nodep">
+<meta property="og:description" content="TCP：Transmission Control Protocol  传输控制协议，面向连接的协议 两台机器之间可靠的，无差错的数据传输 双向字节流传递   服务器（软件服务器：能实现一定功能，在公开地址上对外服务）创建一个ServerSocket，等待连接 客户机：创建一个Socket，连接到服务器 服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/gallery/CentOS.jpg">
-<meta property="og:updated_time" content="2019-10-16T10:46:57.208Z">
+<meta property="og:image" content="http://yoursite.com/gallery/flyingfish.jpg">
+<meta property="og:updated_time" content="2019-11-22T06:13:04.449Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS7安装jdk12">
-<meta name="twitter:description" content="卸载openjdk查找已安装的java包1rpm -qa | grep java 删除已安装的java1234rpm -e --nodeps java-1.8.0-openjdk-1.8.0.102-4.b14.el7.x86_64rpm -e --nodeps java-1.8.0-openjdk-headless-1.8.0.102-4.b14.el7.x86_64rpm -e --nodep">
-<meta name="twitter:image" content="http://yoursite.com/gallery/CentOS.jpg">
+<meta name="twitter:title" content="JAVA TCP编程">
+<meta name="twitter:description" content="TCP：Transmission Control Protocol  传输控制协议，面向连接的协议 两台机器之间可靠的，无差错的数据传输 双向字节流传递   服务器（软件服务器：能实现一定功能，在公开地址上对外服务）创建一个ServerSocket，等待连接 客户机：创建一个Socket，连接到服务器 服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接">
+<meta name="twitter:image" content="http://yoursite.com/gallery/flyingfish.jpg">
 
 
 
@@ -95,7 +95,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="CentOS7安装jdk12" height="28">
+                <img src="/images/logo.svg" alt="JAVA TCP编程" height="28">
             
             </a>
         </div>
@@ -150,7 +150,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="/gallery/CentOS.jpg" alt="CentOS7安装jdk12">
+            <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
         </span>
     </div>
     
@@ -158,17 +158,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-13T07:00:29.000Z">2019-09-13</time>
+                <time class="level-item has-text-grey" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
+                <a class="has-link-grey -link" href="/categories/Java/">Java</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 419 个字)
+                    5 分钟 读完 (大约 675 个字)
                 </span>
                 
                 
@@ -177,50 +177,50 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                CentOS7安装jdk12
+                JAVA TCP编程
             
         </h1>
         <div class="content">
-            <h1 id="卸载openjdk"><a href="#卸载openjdk" class="headerlink" title="卸载openjdk"></a>卸载openjdk</h1><h2 id="查找已安装的java包"><a href="#查找已安装的java包" class="headerlink" title="查找已安装的java包"></a>查找已安装的java包</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></table></figure>
-<h2 id="删除已安装的java"><a href="#删除已安装的java" class="headerlink" title="删除已安装的java"></a>删除已安装的java</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps java-1.8.0-openjdk-1.8.0.102-4.b14.el7.x86_64</span><br><span class="line">rpm -e --nodeps java-1.8.0-openjdk-headless-1.8.0.102-4.b14.el7.x86_64</span><br><span class="line">rpm -e --nodeps java-1.7.0-openjdk-headless-1.7.0.111-2.6.7.8.el7.x86_64</span><br><span class="line">rpm -e --nodeps java-1.7.0-openjdk-1.7.0.111-2.6.7.8.el7.x86_64</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h1 id="下载JDK12压缩包"><a href="#下载JDK12压缩包" class="headerlink" title="下载JDK12压缩包"></a>下载JDK12压缩包</h1><blockquote>
-<p>点击<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html" target="_blank" rel="noopener">这里</a>开始下载</p>
-</blockquote>
-<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/Centos7/jdk%E4%B8%8B%E8%BD%BD.png" alt="jdk下载"></p>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="创建安装目录"><a href="#创建安装目录" class="headerlink" title="创建安装目录"></a>创建安装目录</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /usr/local/java/</span><br></pre></td></tr></table></figure>
-<h2 id="上传文件至安装目录"><a href="#上传文件至安装目录" class="headerlink" title="上传文件至安装目录"></a>上传文件至安装目录</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rz</span><br></pre></td></tr></table></figure>
-<p>然后选择要上传的文件<br>如果有xftp，那就更方便了</p>
-<h2 id="解压至安装目录"><a href="#解压至安装目录" class="headerlink" title="解压至安装目录"></a>解压至安装目录</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf jdk-12.0.2-linux-x64-bin.tar.gz -C /usr/local/java/</span><br></pre></td></tr></table></figure>
-<h1 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h1><h2 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
-<h2 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h2><p>按i进入编辑模式<br>在末尾添加<br><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/local/java/jdk12.0.2</span><br><span class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre</span><br><span class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib</span><br><span class="line">export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure></p>
-<h2 id="保存更改"><a href="#保存更改" class="headerlink" title="保存更改"></a>保存更改</h2><blockquote>
-<p>Linux相关保存命令<br>按ESC键 跳到命令模式，然后：</p>
+            <p>TCP：Transmission Control Protocol</p>
 <ul>
-<li>:w      保存文件但不退出vi</li>
-<li>:w file 将修改另外保存到file中，不退出vi</li>
-<li>:w!     强制保存，不推出vi</li>
-<li>:wq     保存文件并退出vi</li>
-<li>:wq!    强制保存文件，并退出vi</li>
-<li>:q      不保存文件，退出vi</li>
-<li>:q!     不保存文件，强制退出vi</li>
-<li>:e!     放弃所有修改，从上次保存文件开始再编辑</li>
+<li>传输控制协议，面向连接的协议</li>
+<li>两台机器之间可靠的，无差错的数据传输</li>
+<li>双向字节流传递</li>
 </ul>
-</blockquote>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:wq</span><br></pre></td></tr></table></figure>
-<h2 id="使环境变量生效"><a href="#使环境变量生效" class="headerlink" title="使环境变量生效"></a>使环境变量生效</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
-<h1 id="添加软链接"><a href="#添加软链接" class="headerlink" title="添加软链接"></a>添加软链接</h1><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/java/jdk12.0.2/bin/java /usr/bin/java</span><br></pre></td></tr></table></figure>
-<h1 id="检查"><a href="#检查" class="headerlink" title="检查"></a>检查</h1><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
-<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/Centos7/java%E7%8E%AF%E5%A2%83.png" alt="检查"></p>
-<h1 id="删除压缩包"><a href="#删除压缩包" class="headerlink" title="删除压缩包"></a>删除压缩包</h1><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /root</span><br><span class="line">rm -rf jdk-12.0.2-linux-x64-bin.tar.gz</span><br></pre></td></tr></table></figure>
-
+<ol>
+<li>服务器（软件服务器：能实现一定功能，在公开地址上对外服务）<br>创建一个ServerSocket，等待连接</li>
+<li>客户机：创建一个Socket，连接到服务器</li>
+<li>服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接，后续服务器和客户机的对话（这一对Socket）会在一个单独的线程（服务器端）上运行</li>
+<li>服务器继续等待连接，返回步骤1<a id="more"></a>
+</li>
+</ol>
+<h2 id="相关类"><a href="#相关类" class="headerlink" title="相关类"></a>相关类</h2><ul>
+<li>ServerSocket:服务器码头<br>-需要绑定port<br>-如果有多块网卡，需要绑定IP地址</li>
+<li>Socket：运输通道<br>-客户端绑定服务器的地址和端口<br>-客户端往Socket输入流写入数据，送到服务端<br>-客户端从Socket输出流取服务器端过来的地址<br>-服务端则反之</li>
+</ul>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>服务端等待响应时，处于阻塞状态</li>
+<li>服务端可以同时响应多个客户端</li>
+<li>服务端每接受一个客户端，就启动一个独立的线程与之对应</li>
+<li>客户端与服务端都可以选择关闭这对Socket通道</li>
+</ul>
+<h2 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h2><ul>
+<li>发送时间信息</li>
+<li>简单回复（复读机）</li>
+<li>解决中文乱码问题 使用PrintStream类</li>
+</ul>
+<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/java/%E5%AE%A2%E6%88%B7%E7%AB%AF.png" alt="客户端"><br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/java/%E6%9C%8D%E5%8A%A1%E7%AB%AF.png" alt="服务端"></p>
+<p>客户端<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TcpClient</span> </span>&#123;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="hljs-keyword">try</span> &#123;</span><br><span class="line">            Socket s = <span class="hljs-keyword">new</span> Socket(InetAddress.getByName(<span class="hljs-string">"127.0.0.1"</span>), <span class="hljs-number">8001</span>);</span><br><span class="line">            InputStream ips = s.getInputStream();    <span class="hljs-comment">//开启通道的输入流</span></span><br><span class="line">            BufferedReader brNet = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> InputStreamReader(ips,StandardCharsets.UTF_8));</span><br><span class="line">            OutputStream ops = s.getOutputStream();  <span class="hljs-comment">//开启通道的输出流</span></span><br><span class="line">            PrintStream ps = <span class="hljs-keyword">new</span> PrintStream(ops, <span class="hljs-keyword">true</span>, StandardCharsets.UTF_8);</span><br><span class="line">            BufferedReader brKey = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> InputStreamReader(System.in,StandardCharsets.UTF_8));</span><br><span class="line">            </span><br><span class="line">            <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) &#123;</span><br><span class="line">                String strword = brKey.readLine();</span><br><span class="line">                <span class="hljs-keyword">if</span> (strword.equalsIgnoreCase(<span class="hljs-string">"quit"</span>))</span><br><span class="line">                &#123;</span><br><span class="line">                    ps.println(strword);</span><br><span class="line">                    <span class="hljs-keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">                    ps.println(strword);</span><br><span class="line"></span><br><span class="line">                    System.out.println(<span class="hljs-string">"服务端: "</span> + brNet.readLine());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            brNet.close();</span><br><span class="line">            ps.close();</span><br><span class="line">            brKey.close();</span><br><span class="line">        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>服务端<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TcpServer</span> </span>&#123;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="hljs-keyword">try</span> &#123;</span><br><span class="line">            ServerSocket ss = <span class="hljs-keyword">new</span> ServerSocket(<span class="hljs-number">8001</span>);</span><br><span class="line">            <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) &#123;</span><br><span class="line">                Socket s = ss.accept();</span><br><span class="line">                System.out.println(<span class="hljs-string">"连接成功"</span>);</span><br><span class="line">                <span class="hljs-keyword">new</span> Thread(<span class="hljs-keyword">new</span> SendTime(s)).start();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-comment">//ss.close();</span></span><br><span class="line">        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>SendTime.java<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="hljs-string">"服务开始"</span>);</span><br><span class="line">    <span class="hljs-keyword">try</span> &#123;</span><br><span class="line">        InputStream ips = s.getInputStream();</span><br><span class="line">        OutputStream ops = s.getOutputStream();</span><br><span class="line">        BufferedReader br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> InputStreamReader(ips, StandardCharsets.UTF_8));</span><br><span class="line">        PrintStream ps = <span class="hljs-keyword">new</span> PrintStream(ops, <span class="hljs-keyword">true</span>, StandardCharsets.UTF_8);</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) &#123;</span><br><span class="line">            String str = br.readLine();</span><br><span class="line">            System.out.println(<span class="hljs-string">"客户端:"</span> + str);</span><br><span class="line">            <span class="hljs-keyword">if</span> (str.equalsIgnoreCase(<span class="hljs-string">"quit"</span>))</span><br><span class="line">                <span class="hljs-keyword">break</span>;</span><br><span class="line">            <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">                <span class="hljs-keyword">if</span> (str.equalsIgnoreCase(<span class="hljs-string">"time"</span>)) &#123;</span><br><span class="line">                    Date time = <span class="hljs-keyword">new</span> Date();</span><br><span class="line">                    SimpleDateFormat ft = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">"yyyy-MM-dd hh:mm:ss"</span>);</span><br><span class="line">                    ps.println(ft.format(time));</span><br><span class="line"></span><br><span class="line">                &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">                    String strEcho = str + <span class="hljs-string">" 666"</span>;</span><br><span class="line">                    ps.println(strEcho);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        br.close();</span><br><span class="line">        ps.close();</span><br><span class="line">        s.close();</span><br><span class="line">    &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h2>
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/CentOS/">CentOS</a>
+                    <a class="has-link-grey -link" href="/tags/Java/">Java</a>
                 </div>
             </div>
         </div>
@@ -242,16 +242,16 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/10/27/WebREPL/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/09/04/MATLAB-1/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">WebREPL</span>
+                <span class="level-item">MATLAB学习笔记（一）</span>
             </a>
         </div>
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/09/04/MATLAB-1/">
-                <span class="level-item">MATLAB学习笔记（一）</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/08/24/Java-UDP/">
+                <span class="level-item">JAVA UDP编程</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -743,7 +743,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="CentOS7安装jdk12" height="28">
+                    <img src="/images/logo.svg" alt="JAVA TCP编程" height="28">
                 
                 </a>
                 <p class="is-size-7">

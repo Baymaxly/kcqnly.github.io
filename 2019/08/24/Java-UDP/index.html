@@ -8,19 +8,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Java-TCP - Kcqnly&#39;s blog</title>
+<title>JAVA UDP编程 - Kcqnly&#39;s blog</title>
 
 
-    <meta property="og:type" content="article">
-<meta property="og:title" content="Java-TCP">
-<meta property="og:url" content="http://yoursite.com/2019/11/22/Java-TCP/index.html">
+    <meta name="description" content="UDP:无连接无状态的通信协议 发送方发送数据，如果接收方刚好在原地，则可以接收数据。如果不在，那么信息将丢失 发送方无法得知是否发送成功 简单，节省，经济">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA UDP编程">
+<meta property="og:url" content="http://yoursite.com/2019/08/24/Java-UDP/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
+<meta property="og:description" content="UDP:无连接无状态的通信协议 发送方发送数据，如果接收方刚好在原地，则可以接收数据。如果不在，那么信息将丢失 发送方无法得知是否发送成功 简单，节省，经济">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-11-22T06:02:29.545Z">
+<meta property="og:image" content="http://yoursite.com/gallery/wuhan.jpg">
+<meta property="og:updated_time" content="2019-11-22T06:13:16.320Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java-TCP">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:title" content="JAVA UDP编程">
+<meta name="twitter:description" content="UDP:无连接无状态的通信协议 发送方发送数据，如果接收方刚好在原地，则可以接收数据。如果不在，那么信息将丢失 发送方无法得知是否发送成功 简单，节省，经济">
+<meta name="twitter:image" content="http://yoursite.com/gallery/wuhan.jpg">
 
 
 
@@ -91,7 +95,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Java-TCP" height="28">
+                <img src="/images/logo.svg" alt="JAVA UDP编程" height="28">
             
             </a>
         </div>
@@ -144,17 +148,27 @@
                         <div class="column is-8-tablet is-9-desktop is-9-widescreen has-order-2 column-main">
                             <div class="card">
     
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="/gallery/wuhan.jpg" alt="JAVA UDP编程">
+        </span>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-22T06:02:29.000Z">2019-11-22</time>
+                <time class="level-item has-text-grey" datetime="2019-08-24T11:24:01.000Z">2019-08-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Java/">Java</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 0 个字)
+                    4 分钟 读完 (大约 637 个字)
                 </span>
                 
                 
@@ -163,11 +177,38 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Java-TCP
+                JAVA UDP编程
             
         </h1>
         <div class="content">
-            
+            <h2 id="UDP-无连接无状态的通信协议"><a href="#UDP-无连接无状态的通信协议" class="headerlink" title="UDP:无连接无状态的通信协议"></a>UDP:无连接无状态的通信协议</h2><ul>
+<li>发送方发送数据，如果接收方刚好在原地，则可以接收数据。如果不在，那么信息将丢失</li>
+<li>发送方无法得知是否发送成功</li>
+<li>简单，节省，经济</li>
+</ul>
+<a id="more"></a>
+<h2 id="相关类"><a href="#相关类" class="headerlink" title="相关类"></a>相关类</h2><h3 id="DatagramSocket-通讯的数据管道"><a href="#DatagramSocket-通讯的数据管道" class="headerlink" title="DatagramSocket:通讯的数据管道"></a>DatagramSocket:通讯的数据管道</h3><ul>
+<li>send和receive方法</li>
+<li>绑定一个IP和Port</li>
+</ul>
+<h3 id="DatagramPacket"><a href="#DatagramPacket" class="headerlink" title="DatagramPacket"></a>DatagramPacket</h3><ul>
+<li>集装箱：封装数据</li>
+<li>地址：目的地IP+Port</li>
+</ul>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h3 id="一、实现单方面发送和接收"><a href="#一、实现单方面发送和接收" class="headerlink" title="一、实现单方面发送和接收"></a>一、实现单方面发送和接收</h3><h4 id="发送端"><a href="#发送端" class="headerlink" title="发送端"></a>发送端</h4><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> java.net.*;</span><br><span class="line"><span class="hljs-keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UdpSend</span> </span>&#123;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        DatagramSocket ds = <span class="hljs-keyword">new</span> DatagramSocket();</span><br><span class="line">        Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="hljs-keyword">while</span>(<span class="hljs-keyword">true</span>) &#123;</span><br><span class="line">            String str = in.nextLine();</span><br><span class="line">            DatagramPacket dp = <span class="hljs-keyword">new</span> DatagramPacket(str.getBytes(), str.getBytes().length,</span><br><span class="line">                    InetAddress.getByName(<span class="hljs-string">"127.0.0.1"</span>), <span class="hljs-number">3000</span>);</span><br><span class="line">             <span class="hljs-comment">/*如果用str.length(),会出现中文乱码的问题。</span></span><br><span class="line"><span class="hljs-comment">        将数据装到DatagramPacket时,英文字符是一个占一个字节,</span></span><br><span class="line"><span class="hljs-comment">        而一个中文字符是占据两个字节,所以发送数据的长度如果用sendStr.length()计算,</span></span><br><span class="line"><span class="hljs-comment">        英文字符不会出错,计算中文字符就会少计算了要发送的总字节数,</span></span><br><span class="line"><span class="hljs-comment">        造成UDP服务端接收中文乱码*/</span></span><br><span class="line">            ds.send(dp);</span><br><span class="line">            System.out.println(<span class="hljs-string">"发送成功"</span>);</span><br><span class="line">            <span class="hljs-keyword">if</span>(str.equals(<span class="hljs-string">"bye"</span>))</span><br><span class="line">                <span class="hljs-keyword">return</span> ;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="接收端"><a href="#接收端" class="headerlink" title="接收端"></a>接收端</h4><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> java.net.*;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UdpRecv</span> </span>&#123;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        DatagramSocket ds = <span class="hljs-keyword">new</span> DatagramSocket(<span class="hljs-number">3000</span>);</span><br><span class="line">        <span class="hljs-keyword">byte</span>[] buf = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">1024</span>];</span><br><span class="line">        DatagramPacket dp = <span class="hljs-keyword">new</span> DatagramPacket(buf, <span class="hljs-number">1024</span>);</span><br><span class="line">        String strRecv;</span><br><span class="line">        <span class="hljs-keyword">do</span> &#123;</span><br><span class="line">            System.out.println(<span class="hljs-string">"UdpRecv: 我在等待信息"</span>);</span><br><span class="line">            ds.receive(dp);</span><br><span class="line">            System.out.println(<span class="hljs-string">"UdpRecv: 我接收到信息"</span>);</span><br><span class="line">            strRecv = <span class="hljs-keyword">new</span> String(dp.getData(), <span class="hljs-number">0</span>, dp.getLength());</span><br><span class="line">            System.out.println(strRecv);</span><br><span class="line">        &#125;<span class="hljs-keyword">while</span>(!strRecv.equals(<span class="hljs-string">"bye"</span>));</span><br><span class="line"></span><br><span class="line">        ds.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="二、实现双向传输"><a href="#二、实现双向传输" class="headerlink" title="二、实现双向传输"></a>二、实现双向传输</h3><h4 id="发送端-1"><a href="#发送端-1" class="headerlink" title="发送端"></a>发送端</h4><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> java.net.*;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UdpSend</span></span></span><br><span class="line"><span class="hljs-class"></span>&#123;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String [] args)</span> <span class="hljs-keyword">throws</span> Exception</span></span><br><span class="line"><span class="hljs-function">    </span>&#123;</span><br><span class="line">        DatagramSocket ds=<span class="hljs-keyword">new</span> DatagramSocket();<span class="hljs-comment">//建立通信管道</span></span><br><span class="line">        Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);</span><br><span class="line">        String str=in.nextLine();</span><br><span class="line">        DatagramPacket dp=<span class="hljs-keyword">new</span> DatagramPacket(str.getBytes(),str.getBytes().length,</span><br><span class="line">                InetAddress.getByName(<span class="hljs-string">"127.0.0.1"</span>),<span class="hljs-number">3000</span>);  <span class="hljs-comment">//127.0.0.1代表本机</span></span><br><span class="line">        System.out.println(<span class="hljs-string">"UdpSend: 我要发送信息"</span>);</span><br><span class="line">        ds.send(dp);</span><br><span class="line">        System.out.println(<span class="hljs-string">"UdpSend: 我发送信息结束"</span>);</span><br><span class="line"></span><br><span class="line">        Thread.sleep(<span class="hljs-number">1000</span>);</span><br><span class="line">        <span class="hljs-keyword">byte</span> [] buf=<span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">1024</span>];</span><br><span class="line">        DatagramPacket dp2=<span class="hljs-keyword">new</span> DatagramPacket(buf,<span class="hljs-number">1024</span>);</span><br><span class="line">        System.out.println(<span class="hljs-string">"UdpSend: 我在等待信息"</span>);</span><br><span class="line">        ds.receive(dp2);</span><br><span class="line">        System.out.println(<span class="hljs-string">"UdpSend: 我接收到信息"</span>);</span><br><span class="line">        String str2=<span class="hljs-keyword">new</span> String(dp2.getData(),<span class="hljs-number">0</span>,dp2.getLength()) +</span><br><span class="line">                <span class="hljs-string">" from "</span> + dp2.getAddress().getHostAddress()+<span class="hljs-string">":"</span>+dp2.getPort();</span><br><span class="line">        System.out.println(str2);</span><br><span class="line"></span><br><span class="line">        ds.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="接收端-1"><a href="#接收端-1" class="headerlink" title="接收端"></a>接收端</h4><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> java.net.*;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UdpRecv</span></span></span><br><span class="line"><span class="hljs-class"></span>&#123;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception</span></span><br><span class="line"><span class="hljs-function">    </span>&#123;</span><br><span class="line">        DatagramSocket	ds=<span class="hljs-keyword">new</span> DatagramSocket(<span class="hljs-number">3000</span>);</span><br><span class="line">        <span class="hljs-keyword">byte</span> [] buf=<span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">1024</span>];</span><br><span class="line">        DatagramPacket dp=<span class="hljs-keyword">new</span> DatagramPacket(buf,<span class="hljs-number">1024</span>);</span><br><span class="line">        Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="hljs-string">"UdpRecv: 我在等待信息"</span>);</span><br><span class="line">        ds.receive(dp);</span><br><span class="line">        System.out.println(<span class="hljs-string">"UdpRecv: 我接收到信息"</span>);</span><br><span class="line">        String strRecv=<span class="hljs-keyword">new</span> String(dp.getData(),<span class="hljs-number">0</span>,dp.getLength()) +</span><br><span class="line">                <span class="hljs-string">" from "</span> + dp.getAddress().getHostAddress()+<span class="hljs-string">":"</span>+dp.getPort();</span><br><span class="line">        System.out.println(strRecv);</span><br><span class="line"></span><br><span class="line">        Thread.sleep(<span class="hljs-number">1000</span>);</span><br><span class="line">        System.out.println(<span class="hljs-string">"UdpRecv: 我要发送信息"</span>);</span><br><span class="line">        String str=in.nextLine();</span><br><span class="line">        DatagramPacket dp2=<span class="hljs-keyword">new</span> DatagramPacket(str.getBytes(),str.length(),</span><br><span class="line">                InetAddress.getByName(<span class="hljs-string">"127.0.0.1"</span>),dp.getPort());</span><br><span class="line">        ds.send(dp2);</span><br><span class="line">        System.out.println(<span class="hljs-string">"UdpRecv: 我发送信息结束"</span>);</span><br><span class="line">        ds.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h2>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Java/">Java</a>
+                </div>
+            </div>
         </div>
         
         
@@ -187,16 +228,16 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/11/22/Java-UDP/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08/24/Java-TCP/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Java-UDP</span>
+                <span class="level-item">JAVA TCP编程</span>
             </a>
         </div>
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/10/27/WebREPL/">
-                <span class="level-item">WebREPL</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/06/Git学习笔记/">
+                <span class="level-item">Git学习笔记</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -385,7 +426,7 @@
                 <span class="level-item">Java</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">3</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/MATLAB/">
@@ -415,7 +456,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/ESP8266/" style="font-size: 10px;">ESP8266</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/MATLAB/" style="font-size: 10px;">MATLAB</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
+        <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/ESP8266/" style="font-size: 10px;">ESP8266</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/MATLAB/" style="font-size: 10px;">MATLAB</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a>
     </div>
 </div>
 
@@ -434,7 +475,7 @@
             
             <a href="/2019/11/22/Java-Mail/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Java-Mail">
+                    <img class="thumbnail" src="/gallery/java.jpg" alt="Java-Mail">
                 </p>
             </a>
             
@@ -444,44 +485,6 @@
                     <a href="/2019/11/22/Java-Mail/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Java-Mail</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Java/">Java</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/11/22/Java-UDP/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Java-UDP">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-22T06:02:44.000Z">2019-11-22</time></div>
-                    <a href="/2019/11/22/Java-UDP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Java-UDP</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/11/22/Java-TCP/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Java-TCP">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-22T06:02:29.000Z">2019-11-22</time></div>
-                    <a href="/2019/11/22/Java-TCP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Java-TCP</a>
-                    <p class="is-size-7 is-uppercase">
-                        
                     </p>
                 </div>
             </div>
@@ -525,6 +528,44 @@
             </div>
         </article>
         
+        <article class="media">
+            
+            <a href="/2019/09/04/MATLAB-1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/matlab.jpg" alt="MATLAB学习笔记（一）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-04T14:07:39.000Z">2019-09-04</time></div>
+                    <a href="/2019/09/04/MATLAB-1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">MATLAB学习笔记（一）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08/24/Java-TCP/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time></div>
+                    <a href="/2019/08/24/Java-TCP/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JAVA TCP编程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Java/">Java</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
 
@@ -543,7 +584,7 @@
                     <span class="level-item">十一月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
@@ -563,6 +604,17 @@
             <a class="level is-marginless" href="/archives/2019/09/">
                 <span class="level-start">
                     <span class="level-item">九月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">八月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">2</span>
@@ -633,7 +685,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Java/">
                         <span class="tag">Java</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -677,7 +729,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Java-TCP" height="28">
+                    <img src="/images/logo.svg" alt="JAVA UDP编程" height="28">
                 
                 </a>
                 <p class="is-size-7">
