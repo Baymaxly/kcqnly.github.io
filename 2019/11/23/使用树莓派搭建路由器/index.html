@@ -8,17 +8,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Kcqnly&#39;s blog</title>
+<title>使用树莓派搭建路由器 - Kcqnly&#39;s blog</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Kcqnly&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+    <meta name="description" content="之所以会做这个，还是来于一位朋友的启发。宿舍的校园网能连接的设备有限，而且晚上宿舍断电不断网，有了树莓派，来个充电宝供电就可以整晚（等等，好像没有必要，晚上也就用个手机），我得说服一下自己……">
+<meta name="keywords" content="树莓派">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用树莓派搭建路由器">
+<meta property="og:url" content="http://yoursite.com/2019/11/23/使用树莓派搭建路由器/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
+<meta property="og:description" content="之所以会做这个，还是来于一位朋友的启发。宿舍的校园网能连接的设备有限，而且晚上宿舍断电不断网，有了树莓派，来个充电宝供电就可以整晚（等等，好像没有必要，晚上也就用个手机），我得说服一下自己……">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-11-24T03:16:35.929Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kcqnly&#39;s blog">
+<meta name="twitter:title" content="使用树莓派搭建路由器">
+<meta name="twitter:description" content="之所以会做这个，还是来于一位朋友的启发。宿舍的校园网能连接的设备有限，而且晚上宿舍断电不断网，有了树莓派，来个充电宝供电就可以整晚（等等，好像没有必要，晚上也就用个手机），我得说服一下自己……">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -84,13 +89,13 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body class="is-3-column">
+<body class="is-2-column">
     <nav class="navbar navbar-main">
     <div class="container">
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Kcqnly&#39;s blog" height="28">
+                <img src="/images/logo.svg" alt="使用树莓派搭建路由器" height="28">
             
             </a>
         </div>
@@ -140,31 +145,24 @@
             <section class="section">
                 <div class="container">
                     <div class="columns">
-                        <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-                            
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/09/04/MATLAB-1/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/matlab.jpg" alt="MATLAB学习笔记（一）">
-        </a>
-    </div>
+                        <div class="column is-8-tablet is-9-desktop is-9-widescreen has-order-2 column-main">
+                            <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-04T14:07:39.000Z">2019-09-04</time>
+                <time class="level-item has-text-grey" datetime="2019-11-23T06:41:47.000Z">2019-11-23</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
+                <a class="has-link-grey -link" href="/categories/树莓派/">树莓派</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 509 个字)
+                    3 分钟 读完 (大约 402 个字)
                 </span>
                 
                 
@@ -173,22 +171,35 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/09/04/MATLAB-1/">MATLAB学习笔记（一）</a>
+                使用树莓派搭建路由器
             
         </h1>
         <div class="content">
-            <h2 id="一、使用简单命令求解线性方程"><a href="#一、使用简单命令求解线性方程" class="headerlink" title="一、使用简单命令求解线性方程"></a>一、使用简单命令求解线性方程</h2><p>$x_{1}+x_{2}=3$<br>$x_{2}+x_{3}=4$<br>$x_1+x_3=5$<br><figure class="highlight matlab hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;A=[<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span>;<span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>;<span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;B=[<span class="hljs-number">3</span>;<span class="hljs-number">5</span>;<span class="hljs-number">4</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;x=A\B</span><br></pre></td></tr></table></figure></p>
+            <p>之所以会做这个，还是来于一位朋友的启发。宿舍的校园网能连接的设备有限，而且晚上宿舍断电不断网，有了树莓派，来个充电宝供电就可以整晚（等等，好像没有必要，晚上也就用个手机），我得说服一下自己……<br><a id="more"></a><br>好了，我知道了，我想起来了，之前一直在玩ESP8266，这个东西连不了校园网，用树莓派把校园网信号分享出来，那么就又可以续上我的siri控制点灯了。<br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/%E7%86%8A%E7%8C%AB%E5%A4%B4.jpg" alt></p>
+<p>这个有很多方法，网上用的比较多的是hostapd，不过配置还挺烦的，对我这样的初学者不太友好，所以我选择用别人的脚本。还是菜。。。。。。</p>
+<h2 id="1-将create-ap文件拷贝到树莓派-home-pi文件目录下"><a href="#1-将create-ap文件拷贝到树莓派-home-pi文件目录下" class="headerlink" title="1.将create_ap文件拷贝到树莓派/home/pi文件目录下"></a>1.将create_ap文件拷贝到树莓派/home/pi文件目录下</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="hljs-built_in">clone</span> https://github.com/oblique/create_ap </span><br><span class="line"><span class="hljs-comment">#将文件clone下来</span></span><br><span class="line"><span class="hljs-built_in">cd</span> create_ap/</span><br></pre></td></tr></table></figure>
+<h2 id="安装create-ap"><a href="#安装create-ap" class="headerlink" title="安装create_ap"></a>安装create_ap</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#安裝命令</span></span><br><span class="line">sudo make install</span><br><span class="line"><span class="hljs-comment">#更新软件源</span></span><br><span class="line">sudo apt-get update</span><br><span class="line"><span class="hljs-comment">#安装依赖库</span></span><br><span class="line">sudo apt-get install util-linux procps hostapd iproute2 iw haveged dnsmasq</span><br></pre></td></tr></table></figure>
+<p>确保已经用连接了校园网，关于跳转到登陆界面的问题，可以通过访问<a href="http://www.baidu.com,一等得是http开头的网页，才能跳转" target="_blank" rel="noopener">http://www.baidu.com,一等得是http开头的网页，才能跳转</a></p>
+<h2 id="创建WIFI热点"><a href="#创建WIFI热点" class="headerlink" title="创建WIFI热点"></a>创建WIFI热点</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#sudo create_ap wlan0 eth0 WIFI名 密码</span></span><br><span class="line">sudo create_ap wlan0 eth0 kcqnly-Raspberrypi 12345678</span><br></pre></td></tr></table></figure>
+<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/wifi.jpg" alt></p>
+<p>可以了</p>
+<h1 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h1>
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/09/04/MATLAB-1/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/树莓派/">树莓派</a>
                 </div>
             </div>
         </div>
         
+        
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
         
     </div>
 </div>
@@ -197,219 +208,21 @@
 
 
 
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/08/24/Java-TCP/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Java/">Java</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 分钟 读完 (大约 675 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/08/24/Java-TCP/">JAVA TCP编程</a>
-            
-        </h1>
-        <div class="content">
-            <p>TCP：Transmission Control Protocol</p>
-<ul>
-<li>传输控制协议，面向连接的协议</li>
-<li>两台机器之间可靠的，无差错的数据传输</li>
-<li>双向字节流传递</li>
-</ul>
-<ol>
-<li>服务器（软件服务器：能实现一定功能，在公开地址上对外服务）<br>创建一个ServerSocket，等待连接</li>
-<li>客户机：创建一个Socket，连接到服务器</li>
-<li>服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接，后续服务器和客户机的对话（这一对Socket）会在一个单独的线程（服务器端）上运行</li>
-<li>服务器继续等待连接，返回步骤1</li></ol>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/08/24/Java-TCP/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/08/24/Java-UDP/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/wuhan.jpg" alt="JAVA UDP编程">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-24T11:24:01.000Z">2019-08-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Java/">Java</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 分钟 读完 (大约 637 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/08/24/Java-UDP/">JAVA UDP编程</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="UDP-无连接无状态的通信协议"><a href="#UDP-无连接无状态的通信协议" class="headerlink" title="UDP:无连接无状态的通信协议"></a>UDP:无连接无状态的通信协议</h2><ul>
-<li>发送方发送数据，如果接收方刚好在原地，则可以接收数据。如果不在，那么信息将丢失</li>
-<li>发送方无法得知是否发送成功</li>
-<li>简单，节省，经济</li>
-</ul>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/08/24/Java-UDP/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/07/06/Git学习笔记/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/square.jpg" alt="Git学习笔记">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-06T02:15:47.000Z">2019-07-06</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 分钟 读完 (大约 563 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/07/06/Git学习笔记/">Git学习笔记</a>
-            
-        </h1>
-        <div class="content">
-            <p>1.在现有目录中初始化Git仓库</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p>2.对文件的跟踪</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add *.c</span><br></pre></td></tr></table></figure>
-<p>3.提交文件</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="hljs-string">"message"</span></span><br><span class="line">message为对本次提交的说明</span><br></pre></td></tr></table></figure>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/07/06/Git学习笔记/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-    
 <div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/">上一页</a>
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/22/Java-Mail/">
+                <span class="level-item">Java-Mail</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/page/3/">下一页</a>
-        </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
-            
-            <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
-            
-            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
-            
-        </ul>
-    </nav>
+        
+    </div>
 </div>
+
+
 
                         </div>
                         
@@ -417,7 +230,7 @@
         
             
                 
-                    <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+                    <div class="column is-4-tablet is-3-desktop is-3-widescreen  has-order-1 column-left ">
                         
                             
 <div class="card widget">
@@ -634,7 +447,7 @@
 
                                 
                                     
-                                        <div class="column-right-shadow is-hidden-widescreen ">
+                                        <div class="column-right-shadow  ">
                                             
                                                 
 <div class="card widget">
@@ -899,275 +712,6 @@
                     </div>
                     
                             
-                                
-    
-        
-            
-                
-                    <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
-                        
-                            
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            最新文章
-        </h3>
-        
-        <article class="media">
-            
-            <a href="/2019/11/23/使用树莓派搭建路由器/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="使用树莓派搭建路由器">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-23T06:41:47.000Z">2019-11-23</time></div>
-                    <a href="/2019/11/23/使用树莓派搭建路由器/" class="title has-link-black-ter is-size-6 has-text-weight-normal">使用树莓派搭建路由器</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/树莓派/">树莓派</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/11/22/Java-Mail/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/java.jpg" alt="Java-Mail">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-22T06:02:57.000Z">2019-11-22</time></div>
-                    <a href="/2019/11/22/Java-Mail/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Java-Mail</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Java/">Java</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/10/27/WebREPL/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="WebREPL">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-27T12:37:01.000Z">2019-10-27</time></div>
-                    <a href="/2019/10/27/WebREPL/" class="title has-link-black-ter is-size-6 has-text-weight-normal">WebREPL</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/09/13/Centos7安装jdk12/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/CentOS.jpg" alt="CentOS7安装jdk12">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-13T07:00:29.000Z">2019-09-13</time></div>
-                    <a href="/2019/09/13/Centos7安装jdk12/" class="title has-link-black-ter is-size-6 has-text-weight-normal">CentOS7安装jdk12</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/CentOS/">CentOS</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/09/04/MATLAB-1/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/matlab.jpg" alt="MATLAB学习笔记（一）">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-04T14:07:39.000Z">2019-09-04</time></div>
-                    <a href="/2019/09/04/MATLAB-1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">MATLAB学习笔记（一）</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-    </div>
-</div>
-
-                                
-                            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/11/">
-                <span class="level-start">
-                    <span class="level-item">十一月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">2</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
-                <span class="level-start">
-                    <span class="level-item">十月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/09/">
-                <span class="level-start">
-                    <span class="level-item">九月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">2</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/08/">
-                <span class="level-start">
-                    <span class="level-item">八月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">2</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/07/">
-                <span class="level-start">
-                    <span class="level-item">七月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/06/">
-                <span class="level-start">
-                    <span class="level-item">六月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/05/">
-                <span class="level-start">
-                    <span class="level-item">五月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-                                
-                            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/CentOS/">
-                        <span class="tag">CentOS</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/ESP8266/">
-                        <span class="tag">ESP8266</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Java/">
-                        <span class="tag">Java</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/MATLAB/">
-                        <span class="tag">MATLAB</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/git/">
-                        <span class="tag">git</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/hexo/">
-                        <span class="tag">hexo</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/树莓派/">
-                        <span class="tag">树莓派</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-                                
-                                    
-                    </div>
-                    
-                                    
                     </div>
                 </div>
             </section>
@@ -1177,7 +721,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Kcqnly&#39;s blog" height="28">
+                    <img src="/images/logo.svg" alt="使用树莓派搭建路由器" height="28">
                 
                 </a>
                 <p class="is-size-7">

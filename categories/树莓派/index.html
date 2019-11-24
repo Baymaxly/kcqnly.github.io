@@ -8,12 +8,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Kcqnly&#39;s blog</title>
+<title>分类: 树莓派 - Kcqnly&#39;s blog</title>
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Kcqnly&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:url" content="http://yoursite.com/categories/树莓派/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
@@ -141,275 +141,70 @@
                 <div class="container">
                     <div class="columns">
                         <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-                            
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/09/04/MATLAB-1/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/matlab.jpg" alt="MATLAB学习笔记（一）">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-04T14:07:39.000Z">2019-09-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 509 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+                            <div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/categories">分类</a></li>
             
-                <a class="has-link-black-ter" href="/2019/09/04/MATLAB-1/">MATLAB学习笔记（一）</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="一、使用简单命令求解线性方程"><a href="#一、使用简单命令求解线性方程" class="headerlink" title="一、使用简单命令求解线性方程"></a>一、使用简单命令求解线性方程</h2><p>$x_{1}+x_{2}=3$<br>$x_{2}+x_{3}=4$<br>$x_1+x_3=5$<br><figure class="highlight matlab hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;A=[<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span>;<span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>;<span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;B=[<span class="hljs-number">3</span>;<span class="hljs-number">5</span>;<span class="hljs-number">4</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;x=A\B</span><br></pre></td></tr></table></figure></p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/09/04/MATLAB-1/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/08/24/Java-TCP/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/flyingfish.jpg" alt="JAVA TCP编程">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-24T11:25:01.000Z">2019-08-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Java/">Java</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 分钟 读完 (大约 675 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/08/24/Java-TCP/">JAVA TCP编程</a>
-            
-        </h1>
-        <div class="content">
-            <p>TCP：Transmission Control Protocol</p>
-<ul>
-<li>传输控制协议，面向连接的协议</li>
-<li>两台机器之间可靠的，无差错的数据传输</li>
-<li>双向字节流传递</li>
-</ul>
-<ol>
-<li>服务器（软件服务器：能实现一定功能，在公开地址上对外服务）<br>创建一个ServerSocket，等待连接</li>
-<li>客户机：创建一个Socket，连接到服务器</li>
-<li>服务器:ServerSocket接收到连接，创建一个Socket和客户的Socket创建专线连接，后续服务器和客户机的对话（这一对Socket）会在一个单独的线程（服务器端）上运行</li>
-<li>服务器继续等待连接，返回步骤1</li></ol>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/08/24/Java-TCP/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/08/24/Java-UDP/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/wuhan.jpg" alt="JAVA UDP编程">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-24T11:24:01.000Z">2019-08-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Java/">Java</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 分钟 读完 (大约 637 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/08/24/Java-UDP/">JAVA UDP编程</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="UDP-无连接无状态的通信协议"><a href="#UDP-无连接无状态的通信协议" class="headerlink" title="UDP:无连接无状态的通信协议"></a>UDP:无连接无状态的通信协议</h2><ul>
-<li>发送方发送数据，如果接收方刚好在原地，则可以接收数据。如果不在，那么信息将丢失</li>
-<li>发送方无法得知是否发送成功</li>
-<li>简单，节省，经济</li>
-</ul>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/08/24/Java-UDP/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/07/06/Git学习笔记/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/square.jpg" alt="Git学习笔记">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-06T02:15:47.000Z">2019-07-06</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 分钟 读完 (大约 563 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/07/06/Git学习笔记/">Git学习笔记</a>
-            
-        </h1>
-        <div class="content">
-            <p>1.在现有目录中初始化Git仓库</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p>2.对文件的跟踪</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add *.c</span><br></pre></td></tr></table></figure>
-<p>3.提交文件</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="hljs-string">"message"</span></span><br><span class="line">message为对本次提交的说明</span><br></pre></td></tr></table></figure>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/07/06/Git学习笔记/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-    
-<div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/">上一页</a>
-        </div>
-        <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/page/3/">下一页</a>
-        </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
-            
-            <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
-            
-            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
-            
+            <li class="is-active"><a href="#" aria-current="page">树莓派</a></li>
         </ul>
-    </nav>
+        </nav>
+    </div>
 </div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-23T06:41:47.000Z">2019-11-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/树莓派/">树莓派</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 402 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/11/23/使用树莓派搭建路由器/">使用树莓派搭建路由器</a>
+            
+        </h1>
+        <div class="content">
+            <p>之所以会做这个，还是来于一位朋友的启发。宿舍的校园网能连接的设备有限，而且晚上宿舍断电不断网，有了树莓派，来个充电宝供电就可以整晚（等等，好像没有必要，晚上也就用个手机），我得说服一下自己……<br></p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/11/23/使用树莓派搭建路由器/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
                         </div>
                         
