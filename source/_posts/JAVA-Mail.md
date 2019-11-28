@@ -1,11 +1,11 @@
 ---
-title: 用JAVA实现邮件发送的两种选择
-date: 2019-11-19 23:40:55 
+title: Java-Mail
+date: 2019-11-22 14:02:57
 thumbnail: /gallery/java.jpg
-tags: Java 
-categories: 
-- Java
+tags: Java
+categories: Java
 ---
+
 之前做过的好几个项目都用到了JAVA发送邮件的功能，这里放出我用过的两种方法，其实现在只用第二种方法，hhh。
 <!--more-->
 ## 方法一 使用javax.mail包
