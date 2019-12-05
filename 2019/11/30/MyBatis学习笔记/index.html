@@ -8,17 +8,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: git - Kcqnly&#39;s blog</title>
+<title>MyBatis学习笔记 - Kcqnly&#39;s blog</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Kcqnly&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/tags/git/index.html">
+    <meta name="description" content="什么是MyBatisMyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集。MyBatis 可以使用简单的 XML 或注解来配置和映射原生类型、接口和 Java 的 POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。 JDBC存在的问题 数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MyBatis学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/11/30/MyBatis学习笔记/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
+<meta property="og:description" content="什么是MyBatisMyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集。MyBatis 可以使用简单的 XML 或注解来配置和映射原生类型、接口和 Java 的 POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。 JDBC存在的问题 数据库">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-12-03T12:01:47.461Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kcqnly&#39;s blog">
+<meta name="twitter:title" content="MyBatis学习笔记">
+<meta name="twitter:description" content="什么是MyBatisMyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集。MyBatis 可以使用简单的 XML 或注解来配置和映射原生类型、接口和 Java 的 POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。 JDBC存在的问题 数据库">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -84,13 +88,13 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body class="is-3-column">
+<body class="is-2-column">
     <nav class="navbar navbar-main">
     <div class="container">
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Kcqnly&#39;s blog" height="28">
+                <img src="/images/logo.svg" alt="MyBatis学习笔记" height="28">
             
             </a>
         </div>
@@ -140,37 +144,20 @@
             <section class="section">
                 <div class="container">
                     <div class="columns">
-                        <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                        <div class="column is-8-tablet is-9-desktop is-9-widescreen has-order-2 column-main">
                             <div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">git</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/07/06/Git学习笔记/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/square.jpg" alt="Git学习笔记">
-        </a>
-    </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-06T02:15:47.000Z">2019-07-06</time>
+                <time class="level-item has-text-grey" datetime="2019-11-30T08:09:25.000Z">2019-11-30</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 563 个字)
+                    4 分钟 读完 (大约 540 个字)
                 </span>
                 
                 
@@ -179,27 +166,26 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/07/06/Git学习笔记/">Git学习笔记</a>
+                MyBatis学习笔记
             
         </h1>
         <div class="content">
-            <p>1.在现有目录中初始化Git仓库</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p>2.对文件的跟踪</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add *.c</span><br></pre></td></tr></table></figure>
-<p>3.提交文件</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="hljs-string">"message"</span></span><br><span class="line">message为对本次提交的说明</span><br></pre></td></tr></table></figure>
+            <h1 id="什么是MyBatis"><a href="#什么是MyBatis" class="headerlink" title="什么是MyBatis"></a>什么是MyBatis</h1><p>MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集。MyBatis 可以使用简单的 XML 或注解来配置和映射原生类型、接口和 Java 的 POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。</p>
+<h1 id="JDBC存在的问题"><a href="#JDBC存在的问题" class="headerlink" title="JDBC存在的问题"></a>JDBC存在的问题</h1><ul>
+<li>数据库链接创建、释放频繁造成系统资源浪费从而影响系统性能，如果使用数据库链接池可解决此问题。</li>
+<li>Sql 语句在代码中硬编码，造成代码不易维护，实际应用 sql 变化的可能较大，sql 变动需要改变 java代码。</li>
+<li>使用 preparedStatement 向占有位符号传参数存在硬编码，因为 sql 语句的 where 条件不一定，可能多也可能少，修改 sql 还要修改代码，系统不易维护。</li>
+<li>对结果集解析存在硬编码（查询列名），sql 变化导致解析代码变化，系统不易维护,如果能将数据库记录封装成 pojo 对象解析比较方便。</li>
+</ul>
+<h1 id="Dao"><a href="#Dao" class="headerlink" title="Dao"></a>Dao</h1><p>DAO(Data Access Object)是一个数据访问接口，数据访问：顾名思义就是与数据库打交道。夹在业务逻辑与数据库资源中间。<br>在核心J2EE模式中是这样介绍DAO模式的：为了建立一个健壮的J2EE应用，应该将所有对数据源的访问操作抽象封装在一个公共API中。用程序设计的语言来说，就是建立一个接口，接口中定义了此应用程序中将会用到的所有事务方法。在这个应用程序中，当需要和数据源进行交互的时候则使用这个接口，并且编写一个单独的类来实现这个接口在逻辑上对应这个特定的数据存储。</p>
+
         </div>
         
         
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/07/06/Git学习笔记/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
         
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
         
     </div>
 </div>
@@ -208,7 +194,26 @@
 
 
 
-
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/03/用树莓派搭建宿舍监控/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">用树莓派搭建宿舍监控</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/23/使用树莓派搭建路由器/">
+                <span class="level-item">使用树莓派搭建路由器</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -218,7 +223,7 @@
         
             
                 
-                    <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+                    <div class="column is-4-tablet is-3-desktop is-3-widescreen  has-order-1 column-left ">
                         
                             
 <div class="card widget">
@@ -435,7 +440,7 @@
 
                                 
                                     
-                                        <div class="column-right-shadow is-hidden-widescreen ">
+                                        <div class="column-right-shadow  ">
                                             
                                                 
 <div class="card widget">
@@ -711,286 +716,6 @@
                     </div>
                     
                             
-                                
-    
-        
-            
-                
-                    <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
-                        
-                            
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            最新文章
-        </h3>
-        
-        <article class="media">
-            
-            <a href="/2019/12/03/用树莓派搭建宿舍监控/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/raspberrypi.jpg" alt="用树莓派搭建宿舍监控">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-03T12:02:30.000Z">2019-12-03</time></div>
-                    <a href="/2019/12/03/用树莓派搭建宿舍监控/" class="title has-link-black-ter is-size-6 has-text-weight-normal">用树莓派搭建宿舍监控</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/树莓派/">树莓派</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/11/30/MyBatis学习笔记/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="MyBatis学习笔记">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-30T08:09:25.000Z">2019-11-30</time></div>
-                    <a href="/2019/11/30/MyBatis学习笔记/" class="title has-link-black-ter is-size-6 has-text-weight-normal">MyBatis学习笔记</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/11/23/使用树莓派搭建路由器/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/raspberrypi.jpg" alt="使用树莓派搭建路由器">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-23T06:41:47.000Z">2019-11-23</time></div>
-                    <a href="/2019/11/23/使用树莓派搭建路由器/" class="title has-link-black-ter is-size-6 has-text-weight-normal">使用树莓派搭建路由器</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/树莓派/">树莓派</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/11/22/Java-Mail/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/java.jpg" alt="Java-Mail">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-22T06:02:57.000Z">2019-11-22</time></div>
-                    <a href="/2019/11/22/Java-Mail/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Java-Mail</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Java/">Java</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/10/27/WebREPL/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="WebREPL">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-27T12:37:01.000Z">2019-10-27</time></div>
-                    <a href="/2019/10/27/WebREPL/" class="title has-link-black-ter is-size-6 has-text-weight-normal">WebREPL</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-    </div>
-</div>
-
-                                
-                            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/12/">
-                <span class="level-start">
-                    <span class="level-item">十二月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/11/">
-                <span class="level-start">
-                    <span class="level-item">十一月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">3</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
-                <span class="level-start">
-                    <span class="level-item">十月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/09/">
-                <span class="level-start">
-                    <span class="level-item">九月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">2</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/08/">
-                <span class="level-start">
-                    <span class="level-item">八月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">2</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/07/">
-                <span class="level-start">
-                    <span class="level-item">七月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/06/">
-                <span class="level-start">
-                    <span class="level-item">六月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/05/">
-                <span class="level-start">
-                    <span class="level-item">五月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-                                
-                            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/CentOS/">
-                        <span class="tag">CentOS</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/ESP8266/">
-                        <span class="tag">ESP8266</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Java/">
-                        <span class="tag">Java</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/MATLAB/">
-                        <span class="tag">MATLAB</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/git/">
-                        <span class="tag">git</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/hexo/">
-                        <span class="tag">hexo</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/树莓派/">
-                        <span class="tag">树莓派</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-                                
-                                    
-                    </div>
-                    
-                                    
                     </div>
                 </div>
             </section>
@@ -1000,7 +725,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Kcqnly&#39;s blog" height="28">
+                    <img src="/images/logo.svg" alt="MyBatis学习笔记" height="28">
                 
                 </a>
                 <p class="is-size-7">
