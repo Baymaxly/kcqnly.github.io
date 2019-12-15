@@ -8,12 +8,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>分类: MATLAB - Kcqnly&#39;s blog</title>
+<title>标签: MicroPython - Kcqnly&#39;s blog</title>
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Kcqnly&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/categories/MATLAB/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/MicroPython/index.html">
 <meta property="og:site_name" content="Kcqnly&#39;s blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
@@ -145,9 +145,8 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/categories">分类</a></li>
-            
-            <li class="is-active"><a href="#" aria-current="page">MATLAB</a></li>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">MicroPython</a></li>
         </ul>
         </nav>
     </div>
@@ -156,8 +155,8 @@
     <div class="card">
     
     <div class="card-image">
-        <a href="/2019/09/04/MATLAB-1/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/matlab.jpg" alt="MATLAB学习笔记（一）">
+        <a href="/2019/10/27/WebREPL/" class="image is-7by1">
+            <img class="thumbnail" src="/gallery/MicroPython.jpg" alt="WebREPL">
         </a>
     </div>
     
@@ -165,17 +164,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-04T14:07:39.000Z">2019-09-04</time>
+                <time class="level-item has-text-grey" datetime="2019-10-27T12:37:01.000Z">2019-10-27</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/MATLAB/">MATLAB</a>
+                <a class="has-link-grey -link" href="/categories/ESP8266/">ESP8266</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/ESP8266/物联网/">物联网</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/ESP8266/物联网/MIcroPython/">MIcroPython</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 509 个字)
+                    5 分钟 读完 (大约 776 个字)
                 </span>
                 
                 
@@ -184,21 +183,29 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/09/04/MATLAB-1/">MATLAB学习笔记（一）</a>
+                <a class="has-link-black-ter" href="/2019/10/27/WebREPL/">WebREPL</a>
             
         </h1>
         <div class="content">
-            <h2 id="一、使用简单命令求解线性方程"><a href="#一、使用简单命令求解线性方程" class="headerlink" title="一、使用简单命令求解线性方程"></a>一、使用简单命令求解线性方程</h2><p>$x_{1}+x_{2}=3$<br>$x_{2}+x_{3}=4$<br>$x_1+x_3=5$<br><figure class="highlight matlab hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;A=[<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span>;<span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>;<span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;B=[<span class="hljs-number">3</span>;<span class="hljs-number">5</span>;<span class="hljs-number">4</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;x=A\B</span><br></pre></td></tr></table></figure></p>
+            <p>WebREPL客户端是MicroPython官方推荐的更新方式，功能很强大，通过网页的方式读取ESP8266/ESP32的文件系统，可以上传文件或者下载开发板中已存在的文件，可以输入指令并实时查看开发板中的输出状态，完全取代串口调试。配置完就再也不用把8266连接到电脑来写代码了，基本上就可以闲置了。</p>
+<h1 id="使用官方的WebREPL-以ESP8266为例"><a href="#使用官方的WebREPL-以ESP8266为例" class="headerlink" title="使用官方的WebREPL(以ESP8266为例)"></a>使用官方的WebREPL(以ESP8266为例)</h1><ul>
+<li>NodeMCU ESP8266*1</li>
+<li>uPyCraft V1.1</li>
+<li>WIFI<br>关于ESP8266不能连接校园网的问题，可以选择打开手机热点，或者连接ESP8266发出的wifi信号，之后也会出一篇用树莓派当路由器的文章，喜欢折腾的，也可以试一试。<h2 id="让8266连接网络"><a href="#让8266连接网络" class="headerlink" title="让8266连接网络"></a>让8266连接网络</h2><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">do_connect</span><span class="hljs-params">(essid, password)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">import</span> network </span><br><span class="line">    wifi = network.WLAN(network.STA_IF)  </span><br><span class="line">    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> wifi.isconnected(): </span><br><span class="line">        print(<span class="hljs-string">'connecting to network...'</span>)</span><br><span class="line">        wifi.active(<span class="hljs-literal">True</span>) </span><br><span class="line">        wifi.connect(essid, password) </span><br><span class="line">        <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> wifi.isconnected():</span><br><span class="line">            <span class="hljs-keyword">pass</span> </span><br><span class="line">    print(<span class="hljs-string">'network config:'</span>, wifi.ifconfig())</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">do_connect(<span class="hljs-string">"name"</span>,<span class="hljs-string">"password"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="在repl中打开WebREPL"><a href="#在repl中打开WebREPL" class="headerlink" title="在repl中打开WebREPL"></a>在repl中打开WebREPL</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import webrepl_setup</span><br><span class="line">WebREPL daemon auto-start status: disabled</span><br><span class="line"></span><br><span class="line">Would you like to (E)nable or (D)isable it running on boot?</span><br><span class="line">(Empty line to quit)</span><br><span class="line">&gt; E</span><br><span class="line">To <span class="hljs-built_in">enable</span> WebREPL, you must <span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> it</span><br><span class="line">New password: 你的密码</span><br><span class="line">Confirm password: 你的密码</span><br><span class="line">Changes will be activated after reboot</span><br><span class="line">Would you like to reboot now? (y/n)</span><br></pre></td></tr></table></figure>
+<p><b>还得再输入两条语句</b><br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/blog/webrepl.png" alt><br>这里有两个ip地址，如果你是直接连的ESP8266发出的WIFI信号的话，那么就是上面一个，如果你连的是自己的wifi，那么就是下面一个</p>
+<h2 id="通过网页访问ESP8266"><a href="#通过网页访问ESP8266" class="headerlink" title="通过网页访问ESP8266"></a>通过网页访问ESP8266</h2><p><b>WebREPL客户端必须与开发板处在同一局域网下，否则无法正常连接</b><br><a href="http://micropython.org/webrepl/" target="_blank" rel="noopener">官方webrepl网址</a><br>输入 ws://192.168.1.136:8266<br>再输入之前设置的密码，就ok了<br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/blog/webrepl1.png" alt></p>
+<h2 id="一些常用指令"><a href="#一些常用指令" class="headerlink" title="一些常用指令"></a>一些常用指令</h2><p>我们可以看到WebREPL网页右端有上传和下载文件的按钮，我们可以通过这些按钮来把我们本地写的代码上传到8266，但是上传之后怎么运行呢，怎么删除上传的错误文件？下面就是一些常用的指令<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">exec</span>(open(<span class="hljs-string">'main.py'</span>).<span class="hljs-built_in">read</span>())  <span class="hljs-comment">#执行main.py这个文件</span></span><br><span class="line"></span><br><span class="line">import os</span><br><span class="line">os.remove(<span class="hljs-string">"test.py"</span>)          <span class="hljs-comment">#删除test.py这个文件</span></span><br><span class="line">os.listdir()                  <span class="hljs-comment">#列出主目录下的所有文件</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h1><p>把连网和打开WebREPL的代码放到boot.py这个文件里，就可以上电自动运行，但是，这样就带来了一个问题，那就是ESP8266的IP会变，每次还得去查IP，也是挺烦的，查了一下官方手册，貌似是没有设置静态IP的方法。。。。。。</p>
+<p>害</p>
+<p>吐槽一下，官方的页面好丑，最近发现了一个国内的WebREPL，还挺好的，尝试了一下，由于ESP8266内存有限，用不了，准备用ESP32试一试</p>
+<p><a href="http://www.1zlab.com/ide/#/" target="_blank" rel="noopener">EMP-IDE</a></p>
+<p><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/blog/EMP-IDE.png" alt="EMP-IDE"></p>
+<h1 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h1>
         </div>
         
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/09/04/MATLAB-1/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
         
         
     </div>
