@@ -20,7 +20,7 @@
 <meta property="og:description" content="WebREPL客户端是MicroPython官方推荐的更新方式，功能很强大，通过网页的方式读取ESP8266/ESP32的文件系统，可以上传文件或者下载开发板中已存在的文件，可以输入指令并实时查看开发板中的输出状态，完全取代串口调试。配置完就再也不用把8266连接到电脑来写代码了，基本上就可以闲置了。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/gallery/MicroPython.jpg">
-<meta property="og:updated_time" content="2019-12-15T04:21:26.373Z">
+<meta property="og:updated_time" content="2019-12-18T10:09:22.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WebREPL">
 <meta name="twitter:description" content="WebREPL客户端是MicroPython官方推荐的更新方式，功能很强大，通过网页的方式读取ESP8266/ESP32的文件系统，可以上传文件或者下载开发板中已存在的文件，可以输入指令并实时查看开发板中的输出状态，完全取代串口调试。配置完就再也不用把8266连接到电脑来写代码了，基本上就可以闲置了。">
@@ -168,7 +168,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 777 个字)
+                    5 分钟 读完 (大约 747 个字)
                 </span>
                 
                 
@@ -186,8 +186,7 @@
 <h1 id="使用官方的WebREPL-以ESP8266为例"><a href="#使用官方的WebREPL-以ESP8266为例" class="headerlink" title="使用官方的WebREPL(以ESP8266为例)"></a>使用官方的WebREPL(以ESP8266为例)</h1><ul>
 <li>NodeMCU ESP8266*1</li>
 <li>uPyCraft V1.1</li>
-<li>WIFI<br>关于ESP8266不能连接校园网的问题，可以选择打开手机热点，或者连接ESP8266发出的wifi信号，之后也会出一篇用树莓派当路由器的文章，喜欢折腾的，也可以试一试。<h2 id="让8266连接网络"><a href="#让8266连接网络" class="headerlink" title="让8266连接网络"></a>让8266连接网络</h2><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">do_connect</span><span class="hljs-params">(essid, password)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">import</span> network </span><br><span class="line">    wifi = network.WLAN(network.STA_IF)  </span><br><span class="line">    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> wifi.isconnected(): </span><br><span class="line">        print(<span class="hljs-string">'connecting to network...'</span>)</span><br><span class="line">        wifi.active(<span class="hljs-literal">True</span>) </span><br><span class="line">        wifi.connect(essid, password) </span><br><span class="line">        <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> wifi.isconnected():</span><br><span class="line">            <span class="hljs-keyword">pass</span> </span><br><span class="line">    print(<span class="hljs-string">'network config:'</span>, wifi.ifconfig())</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">do_connect(<span class="hljs-string">"name"</span>,<span class="hljs-string">"password"</span>)</span><br></pre></td></tr></table></figure>
-</li>
+<li>WIFI<br>关于ESP8266不能连接校园网的问题，可以选择打开手机热点，或者连接ESP8266发出的wifi信号，之后也会出一篇用树莓派当路由器的文章，喜欢折腾的，也可以试一试。<h2 id="让8266连接网络"><a href="#让8266连接网络" class="headerlink" title="让8266连接网络"></a>让8266连接网络</h2><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/blog/micropy.svg" alt="连网"></li>
 </ul>
 <h2 id="在repl中打开WebREPL"><a href="#在repl中打开WebREPL" class="headerlink" title="在repl中打开WebREPL"></a>在repl中打开WebREPL</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import webrepl_setup</span><br><span class="line">WebREPL daemon auto-start status: disabled</span><br><span class="line"></span><br><span class="line">Would you like to (E)nable or (D)isable it running on boot?</span><br><span class="line">(Empty line to quit)</span><br><span class="line">&gt; E</span><br><span class="line">To <span class="hljs-built_in">enable</span> WebREPL, you must <span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> it</span><br><span class="line">New password: 你的密码</span><br><span class="line">Confirm password: 你的密码</span><br><span class="line">Changes will be activated after reboot</span><br><span class="line">Would you like to reboot now? (y/n)</span><br></pre></td></tr></table></figure>
 <p><b>还得再输入两条语句</b><br><img src="https://ly-object-1259106193.cos.ap-chengdu.myqcloud.com/blog/webrepl.png" alt><br>这里有两个ip地址，如果你是直接连的ESP8266发出的WIFI信号的话，那么就是上面一个，如果你连的是自己的wifi，那么就是下面一个</p>
